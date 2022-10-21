@@ -1,0 +1,450 @@
+.jss74 {
+    padding: 0 5px;
+    margin-bottom: 80px;
+}
+
+.css-1m6pqln {
+    width: 100%;
+    margin-left: auto;
+    box-sizing: border-box;
+    margin-right: auto;
+    display: block;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.jss72 {
+    margin-top: 30px;
+}
+.css-18xbx79 {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: -40px;
+    width: calc(100% + 40px);
+    margin-left: -40px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.css-dfpqc0 {
+    position: relative;
+    cursor: pointer;
+}
+
+.MuiAvatar-root .MuiAvatar-circular .jss85 .css-3i9vrz{
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 20%;
+    box-shadow: rgb(11 37 75 / 50%) 0px 0px 20px;
+}
+
+.css-1hy9t21 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    object-fit: cover;
+    color: transparent;
+    text-indent: 10000px;
+}
+
+.jss85 {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+
+.css-18xbx79 > .MuiGrid-item{
+    padding-left: 40px;
+    padding-top: 40px;
+    max-width: none;
+}
+
+.css-1wxaqej  {
+    box-sizing: border-box;
+    margin: 0px;
+    flex-direction: row;
+}
+
+.css-tcfod9 {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    margin-left: -16px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgb(25, 118, 210);
+    color: rgb(255, 255, 255);
+}
+.css-8feus5 {
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentcolor;
+    flex-shrink: 0;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-size: 18px;
+}
+
+/* giới thiệu chung */
+.jss73 {
+    width: 100%;
+}
+
+.css-ikzlcq {
+    display: flex;
+    flex-direction: column;
+}
+.css-c7dfze {
+    margin: 0px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.57;
+    letter-spacing: 0.00714em;
+    text-align: left;
+}
+h6 {
+    display: block;
+    font-size: 0.67em;
+    margin-block-start: 2.33em;
+    margin-block-end: 2.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.css-ikzlcq > :not(style) + :not(style) {
+    margin: 16px 0px 0px;
+}
+.jss88 {
+    cursor: pointer;
+    padding: 10px 15px;
+    overflow: hidden;
+    background: #f8f8f8;
+    border-radius: 15px;
+}
+.css-3nargb {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: -16px;
+    width: calc(100% + 16px);
+    margin-left: -16px;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.css-3nargb > .MuiGrid-item {
+    padding-left: 16px;
+    padding-top: 16px;
+}
+.jss87 {
+    color: #165FE6;
+}
+.css-1cn3yto {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.css-vubbuv {
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentcolor;
+    flex-shrink: 0;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-size: 1.5rem;
+}
+
+.css-v3z1wi {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+
+.css-9yaf8t {
+    box-sizing: border-box;
+    margin: 0px;
+    flex-direction: row;
+    flex-basis: 91.6667%;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    max-width: 91.6667%;
+    text-align: left;
+}
+
+.jss89 {
+    font-weight: 300;
+}
+.css-68o8xu {
+    margin: 0px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.jss91 {
+    overflow: hidden;
+    font-weight: 500;
+    white-space: pre-line;
+    text-overflow: ellipsis;
+}
+
+.css-16rlg6l {
+    margin: 0px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.75;
+    letter-spacing: 0.00938em;
+}
+
+.css-1wxaqej {
+    box-sizing: border-box;
+    margin: 0px;
+    flex-direction: row;
+}
+.css-vvubbu {
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentcolor;
+    flex-shrink: 0;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-size: 1.5rem;
+}
+
+.MuiGrid-root .MuiGrid-item .css-1wxaqej h6{
+    margin-bottom: 10px;
+}
+
+
+.jss79 {
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.css-39bbo6 {
+    margin: 30px 0px;
+    flex-shrink: 0;
+    border-width: 0px 0px thin;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.12);
+}
+
+.css-1c87emg {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.css-1c87emg  .css-68o8xu{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.css-rfnosa {
+    box-sizing: border-box;
+    flex-direction: row;
+}
+.css-110xwq5 {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    min-width: 64px;
+    padding: 8px 22px;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    color: rgb(255, 255, 255);
+    background-color: rgb(25, 118, 210);
+    box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
+}
+
+.css-w0pj6f {
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    z-index: 0;
+    inset: 0px;
+    border-radius: inherit;
+}
+
+
+
+
+
+
+
+
+/* màn hình user */
+@media (min-width: 600px) {
+    .css-1m6pqln {
+        max-width: 600px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .css-9yaf8t {
+        flex-basis: 91.6667%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 91.6667%;
+    }
+    .css-we0np1 {
+        flex-basis: 100%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 100%;
+    }
+    .css-1v3pb4k {
+        box-sizing: border-box;
+        margin: 0px;
+        flex-direction: row;
+        flex-basis: 83.3333%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 83.3333%;
+    }
+}
+
+
+
+
+
+
+
+@media (min-width: 1536px) {
+    .css-9yaf8t {
+        flex-basis: 91.6667%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 91.6667%;
+    }
+    .css-1doag2i {
+        flex-basis: 8.33333%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 8.33333%;
+    }
+    .css-1v3pb4k {
+        flex-basis: 83.3333%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 83.3333%;
+    }
+    .css-we0np1 {
+        flex-basis: 100%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 100%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .css-9yaf8t {
+        flex-basis: 91.6667%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 91.6667%;
+    }
+    .css-1doag2i {
+        flex-basis: 8.33333%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 8.33333%;
+    }
+    .css-1v3pb4k {
+        flex-basis: 83.3333%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 83.3333%;
+    }
+    .css-we0np1 {
+        flex-basis: 100%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 100%;
+    }
+
+}
+@media (min-width: 900px) {
+    .css-9yaf8t {
+        flex-basis: 91.6667%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 91.6667%;
+    }
+    .css-1doag2i {
+        flex-basis: 8.33333%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 8.33333%;
+    }
+    .css-1v3pb4k {
+        flex-basis: 83.3333%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 83.3333%;
+    }
+    .css-we0np1 {
+        flex-basis: 100%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 100%;
+    }
+
+}
+
+

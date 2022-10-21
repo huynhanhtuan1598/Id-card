@@ -1,0 +1,53 @@
+.jss6 {
+    color: #165FE6;
+    font-weight: 500;
+    margin-left: auto;
+    text-decoration: none;
+}
+.jss907 {
+    width: 66px;
+    border: 1px solid #165fe6;
+    height: 36px;
+    display: flex;
+    position: relative;
+    background: #f1f1f1;
+    box-sizing: border-box;
+    align-items: center;
+    border-radius: 30px;
+    justify-content: center;
+}
+
+.jss909 {
+    color: #165fe6;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    font-weight: 600;
+    border-radius: 30px;
+    text-transform: uppercase;
+    justify-content: center;
+}   
+
+.jss908 {
+    top: 2px;
+    left: 2px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #165fe6;
+    transition: all .3s;
+    border-radius: 30px;
+}
+
+.jss907 .jss908{
+    transform: translateX(30px);
+}
+
+.jss903 {
+    color: #165FE6;
+    font-weight: 500;
+    margin-right: 15px;
+    text-decoration: none;
+}
