@@ -8,7 +8,7 @@ import Career from "../../../component/career_position/career";
 import Hash_url from "../../../component/hash_url/hash_url";
 import Language from "../../../component/language/from_lang";
 import Contact_user from "../../../component/contact/contact_user";
-
+import Report_template from "../../../component/form_report/report_template";
 
 export default function profile() {
   return (
@@ -22,6 +22,7 @@ export default function profile() {
       {/* <Hash_url/> */}
       {/* <Language/> */}
       {/* <Contact_user/> */}
+      {/* <Report_template/> */}
       
     </>
   );

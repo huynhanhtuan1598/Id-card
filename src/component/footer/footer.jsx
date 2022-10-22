@@ -1,9 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './style-footer.css'
 
 export default function footer() {
   return (
     <div className="MuiBottomNavigation-root jss94 css-de1c49">
+      <Link to="/">
       <button className="MuiButtonBase-root MuiBottomNavigationAction-root jss95 css-fcyteq home"
         tabindex="0"
         type="button"
@@ -22,6 +24,8 @@ export default function footer() {
         </span>
         <span class="MuiTouchRipple-root css-w0pj6f"></span>
       </button>
+      </Link>
+      <Link to="/form_report">
       <button class="MuiButtonBase-root MuiBottomNavigationAction-root jss95 css-fcyteq report"
         tabindex="0"
         type="button"
@@ -39,6 +43,8 @@ export default function footer() {
         <span class="MuiBottomNavigationAction-label css-14bcf2k">Báo cáo</span>
         <span class="MuiTouchRipple-root css-w0pj6f"></span>
       </button>
+      </Link>
+      <Link to="/add_contact">
       <a class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary jss96 css-1ifjro9"
         tabindex="0"
         href="/add-contact"
@@ -54,6 +60,8 @@ export default function footer() {
         </svg>
         <span class="MuiTouchRipple-root css-w0pj6f"></span>
       </a>
+      </Link>
+      <Link to="/form_group">
       <button class="MuiButtonBase-root MuiBottomNavigationAction-root jss95 css-fcyteq group"
         tabindex="0"
         type="button"
@@ -79,6 +87,8 @@ export default function footer() {
         <span class="MuiBottomNavigationAction-label css-14bcf2k">Nhóm</span>
         <span class="MuiTouchRipple-root css-w0pj6f"></span>
       </button>
+      </Link>
+      <Link to="/appearance">
       <button class="MuiButtonBase-root MuiBottomNavigationAction-root jss95 css-fcyteq backgroup-template"
         tabindex="0"
         // type="button"
@@ -98,6 +108,7 @@ export default function footer() {
         </span>
         <span class="MuiTouchRipple-root css-w0pj6f"></span>
       </button>
+      </Link>
     </div>
   );
 }

@@ -1,16 +1,12 @@
-.jss135 {
+.jss133 {
     box-shadow: none;
     margin-bottom: 20px;
 }
-div .css-qixh7c {
-    box-shadow: none;
-}
 
-.jss136 {
+.jss134 {
     flex-grow: 1;
     font-size: 16px;
 }
-
 
 .css-qixh7c {
     transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -24,8 +20,6 @@ div .css-qixh7c {
     background-color: transparent;
     color: inherit;
 }
-
-
 
 .css-191lty2 {
     position: relative;
@@ -65,6 +59,15 @@ div .css-qixh7c {
     transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
+.css-1anx036 {
+    margin: 0px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+}
+
 .css-vubbuv {
     user-select: none;
     width: 1em;
@@ -84,20 +87,6 @@ div .css-qixh7c {
     inset: 0px;
     border-radius: inherit;
 }
-
-.css-1anx036 {
-    margin: 0px;
-    font-family: Roboto, Helvetica, Arial, sans-serif;
-    font-weight: 500;
-    font-size: 1.25rem;
-    line-height: 1.6;
-    letter-spacing: 0.0075em;
-}
-
-.css-191lty2 .css-1anx036 {
-    text-align: left;
-}
-
 .css-1m6pqln {
     width: 100%;
     margin-left: auto;
@@ -115,6 +104,7 @@ div .css-qixh7c {
     width: calc(100% + 24px);
     margin-left: -24px;
 }
+
 .css-su6uu9 > .MuiGrid-item {
     padding-left: 24px;
     padding-top: 24px;
@@ -126,18 +116,6 @@ div .css-qixh7c {
     margin: 0px;
     flex-direction: row;
 }
-.css-1anx036 {
-    margin: 0px;
-    font-family: Roboto, Helvetica, Arial, sans-serif;
-    font-weight: 500;
-    font-size: 1.25rem;
-    line-height: 1.6;
-    letter-spacing: 0.0075em;
-}
-
-.css-su6uu9 .css-1anx036{
-    text-align: left;
-}
 
 .css-9l3uo3 {
     margin: 0px;
@@ -147,42 +125,19 @@ div .css-qixh7c {
     line-height: 1.5;
     letter-spacing: 0.00938em;
 }
-.css-1wxaqej .css-9l3uo3{
+.css-1wxaqej .myphone{
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+
+.css-1wxaqej .phone_user{
+    font-size: 15px; 
     color: rgb(120, 120, 120);
-    margin-top: 10px;
-    text-align: left;
 }
 form {
     display: block;
     margin-top: 0em;
 }
-.css-1wxaqej .css-tzsjye{
-    margin-bottom: 20px;
-}
-
-
-.css-tzsjye .input_name{
-    background: rgb(238, 238, 238);
-    border-radius: 10px;
-}
-
-.input_name .name_input{
-    position: absolute;
-    top: 0px;
-    padding: 10px 15px;
-    font-size: 15px;
-    color: rgb(81, 81, 81);
-}
-.input_name input{
-    padding: 40px 15px 15px;
-    width: 100%;
-    border: none;
-    background: transparent;
-    font-size: 19px;
-    position: relative;
-    z-index: 10;
-}
-
 .css-tzsjye {
     display: inline-flex;
     flex-direction: column;
@@ -193,8 +148,15 @@ form {
     border: 0px;
     vertical-align: top;
     width: 100%;
+    margin-bottom: 20px;
 }
-.jss36 {
+.jss138 {
+    background: #eee;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.jss141 {
     height: 60px;
     font-size: 16px;
     background: #165FE6;
@@ -233,8 +195,58 @@ form {
     background-color: rgb(25, 118, 210);
     box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
     width: 100%;
+}   
+
+.jss135 {
+    cursor: pointer;
+    background: #eee;
+    border-radius: 10px;
+}
+.css-1b1jvye {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
 }
 
+.jss136 {
+    top: 0;
+    color: #424242;
+    padding: 10px 15px;
+    position: absolute;
+    font-size: 15px;
+}
+.jss137 {
+    width: 100%;
+    border: none;
+    display: block;
+    padding: 40px 15px 15px;
+    z-index: 10;
+    position: relative;
+    font-size: 19px;
+    background: transparent;
+    min-height: 60px;
+}
+.jss139 {
+    top: 0;
+    color: #424242;
+    padding: 10px 15px;
+    position: absolute;
+    font-size: 15px;
+}
+.jss140 {
+    width: 100%;
+    border: none;
+    padding: 40px 15px 15px 15px;
+    z-index: 10;
+    position: relative;
+    font-size: 19px;
+    background: transparent;
+}
 .css-w0pj6f {
     overflow: hidden;
     pointer-events: none;
@@ -245,65 +257,56 @@ form {
 }
 
 
-.css-39bbo6 {
-    margin: 0px;
-    flex-shrink: 0;
-    border-width: 0px 0px thin;
-    border-style: solid;
-    border-color: rgba(0, 0, 0, 0.12);
-    margin-bottom: 20px;
-}
-.css-1wrck3k {
-    display: inline-flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-    position: relative;
-    box-sizing: border-box;
-    -webkit-tap-highlight-color: transparent;
-    background-color: transparent;
-    outline: 0px;
-    margin: 0px;
-    cursor: pointer;
-    user-select: none;
-    vertical-align: middle;
-    appearance: none;
-    text-decoration: none;
-    font-family: Roboto, Helvetica, Arial, sans-serif;
-    font-weight: 500;
-    font-size: 0.9375rem;
-    line-height: 1.75;
-    letter-spacing: 0.02857em;
-    text-transform: uppercase;
-    min-width: 64px;
-    padding: 7px 21px;
-    border-radius: 4px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    border: 1px solid rgba(156, 39, 176, 0.5);
-    color: rgb(156, 39, 176);
-    width: 100%;
-}
-
-
-
-
-@media (min-width: 600px) {
-    .css-191lty2 {
-        padding-left: 24px;
-        padding-right: 24px;
-        min-height: 64px;
-    }
-    .css-1m6pqln {
-        max-width: 600px;
-        padding-left: 24px;
-    padding-right: 24px;
-    }
-}
 
 
 @media (min-width: 0px) and (orientation: landscape) {
     .css-191lty2 {
         min-height: 48px;
+    }
+}
+
+
+
+@media (min-width: 600px) {
+    .css-191lty2 {
+        min-height: 64px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .css-1m6pqln {
+        max-width: 600px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .css-kxu0dz {
+        flex-basis: 0px;
+        -webkit-box-flex: 1;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+}
+@media (min-width: 1536px) {
+    .css-kxu0dz {
+        flex-basis: 0px;
+        -webkit-box-flex: 1;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+}
+@media (min-width: 1200px) {
+    .css-kxu0dz {
+        flex-basis: 0px;
+        -webkit-box-flex: 1;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+}
+@media (min-width: 900px) {
+    .css-kxu0dz {
+        flex-basis: 0px;
+        -webkit-box-flex: 1;
+        flex-grow: 1;
+        max-width: 100%;
     }
 }

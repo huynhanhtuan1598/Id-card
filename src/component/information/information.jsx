@@ -1,6 +1,7 @@
 import React from "react";
 import "./infor.css";
 import user from "../../asset/img/user.jfif";
+import { NavLink, Link } from "react-router-dom";
 
 export default function information() {
   return (
@@ -61,17 +62,19 @@ export default function information() {
                       </div>
                       <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
                         <div class="MuiGrid-root MuiGrid-container css-1c87emg">
-                          <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
-                            <svg
-                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss87 css-vubbuv"
-                              focusable="false"
-                              aria-hidden="true"
-                              viewBox="0 0 24 24"
-                              data-testid="NavigateNextIcon"
-                            >
-                              <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
-                            </svg>
-                          </div>
+                          <Link strict to="/home/edit_profile">
+                            <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+                              <svg
+                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss87 css-vubbuv"
+                                focusable="false"
+                                aria-hidden="true"
+                                viewBox="0 0 24 24"
+                                data-testid="NavigateNextIcon"
+                              >
+                                <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+                              </svg>
+                            </div>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -159,17 +162,19 @@ export default function information() {
                       </div>
                       <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
                         <div class="MuiGrid-root MuiGrid-container css-1c87emg">
-                          <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
-                            <svg
-                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss87 css-vubbuv"
-                              focusable="false"
-                              aria-hidden="true"
-                              viewBox="0 0 24 24"
-                              data-testid="NavigateNextIcon"
-                            >
-                              <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
-                            </svg>
-                          </div>
+                          <Link to="/company">
+                            <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+                              <svg
+                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss87 css-vubbuv"
+                                focusable="false"
+                                aria-hidden="true"
+                                viewBox="0 0 24 24"
+                                data-testid="NavigateNextIcon"
+                              >
+                                <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+                              </svg>
+                            </div>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -207,17 +212,19 @@ export default function information() {
                       </div>
                       <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
                         <div class="MuiGrid-root MuiGrid-container css-1c87emg">
-                          <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
-                            <svg
-                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss87 css-vubbuv"
-                              focusable="false"
-                              aria-hidden="true"
-                              viewBox="0 0 24 24"
-                              data-testid="NavigateNextIcon"
-                            >
-                              <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
-                            </svg>
-                          </div>
+                          <Link to="/career">
+                            <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+                              <svg
+                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss87 css-vubbuv"
+                                focusable="false"
+                                aria-hidden="true"
+                                viewBox="0 0 24 24"
+                                data-testid="NavigateNextIcon"
+                              >
+                                <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+                              </svg>
+                            </div>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -262,17 +269,19 @@ export default function information() {
                       </div>
                       <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
                         <div class="MuiGrid-root MuiGrid-container css-1c87emg">
-                          <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
-                            <svg
-                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss87 css-vubbuv"
-                              focusable="false"
-                              aria-hidden="true"
-                              viewBox="0 0 24 24"
-                              data-testid="NavigateNextIcon"
-                            >
-                              <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
-                            </svg>
-                          </div>
+                          <Link to="/hash_url">
+                            <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+                              <svg
+                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss87 css-vubbuv"
+                                focusable="false"
+                                aria-hidden="true"
+                                viewBox="0 0 24 24"
+                                data-testid="NavigateNextIcon"
+                              >
+                                <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+                              </svg>
+                            </div>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -310,17 +319,19 @@ export default function information() {
                       </div>
                       <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
                         <div class="MuiGrid-root MuiGrid-container css-1c87emg">
-                          <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
-                            <svg
-                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss87 css-vubbuv"
-                              focusable="false"
-                              aria-hidden="true"
-                              viewBox="0 0 24 24"
-                              data-testid="NavigateNextIcon"
-                            >
-                              <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
-                            </svg>
-                          </div>
+                          <Link to="/from_lang">
+                            <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+                              <svg
+                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss87 css-vubbuv"
+                                focusable="false"
+                                aria-hidden="true"
+                                viewBox="0 0 24 24"
+                                data-testid="NavigateNextIcon"
+                              >
+                                <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+                              </svg>
+                            </div>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -385,17 +396,19 @@ export default function information() {
                               </div>
                               <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
                                 <div class="MuiGrid-root MuiGrid-container css-1c87emg">
-                                  <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
-                                    <svg
-                                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss87 css-vubbuv"
-                                      focusable="false"
-                                      aria-hidden="true"
-                                      viewBox="0 0 24 24"
-                                      data-testid="NavigateNextIcon"
-                                    >
-                                      <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
-                                    </svg>
-                                  </div>
+                                  <Link to="/contact_user">
+                                    <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+                                      <svg
+                                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss87 css-vubbuv"
+                                        focusable="false"
+                                        aria-hidden="true"
+                                        viewBox="0 0 24 24"
+                                        data-testid="NavigateNextIcon"
+                                      >
+                                        <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+                                      </svg>
+                                    </div>
+                                  </Link>
                                 </div>
                               </div>
                             </div>
@@ -423,7 +436,7 @@ export default function information() {
                     type="button"
                   >
                     Góp ý<span class="MuiTouchRipple-root css-w0pj6f"></span>
-                  </button> 
+                  </button>
                 </div>
               </div>
             </div>

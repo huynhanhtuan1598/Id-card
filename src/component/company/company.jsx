@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import  './style_company.css';
 
 export default function company() {
@@ -6,10 +7,9 @@ export default function company() {
     <div>
       <header class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic jss173 css-qixh7c">
         <div class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-191lty2">
-          <a
+          <Link to ="/"
             class="MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeStart MuiIconButton-sizeMedium css-7vbamj"
             tabindex="0"
-            href="/profile"
           >
             <svg
               class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
@@ -21,7 +21,7 @@ export default function company() {
               <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path>
             </svg>
             <span class="MuiTouchRipple-root css-w0pj6f"></span>
-          </a>
+          </Link>
           <h6 class="MuiTypography-root MuiTypography-h6 jss174 css-1anx036">
             Công ty
           </h6>
