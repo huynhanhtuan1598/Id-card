@@ -1,13 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import './style.css'
+import { Link, NavLink } from "react-router-dom";
+import "./style.css";
 
 export default function add_contact() {
   return (
     <div>
       <header class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic jss245 css-qixh7c">
         <div class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-191lty2">
-          <Link to='/'
+          <Link
+            to="/"
             class="MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeStart MuiIconButton-sizeMedium css-7vbamj"
             tabindex="0"
           >
@@ -73,7 +74,8 @@ export default function add_contact() {
 
       <div class="MuiContainer-root MuiContainer-maxWidthSm css-1m6pqln">
         <div>
-          <div className="inf_add" >
+          {/* Phonenumber */}
+          <div className="inf_add">
             <div class="jss252">
               <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-3nargb">
                 <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 jss251 css-o0rlmm">
@@ -105,17 +107,19 @@ export default function add_contact() {
                     </div>
                     <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
                       <div class="MuiGrid-root MuiGrid-container css-1c87emg">
-                        <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
-                          <svg
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss251 css-vubbuv"
-                            focusable="false"
-                            aria-hidden="true"
-                            viewBox="0 0 24 24"
-                            data-testid="NavigateNextIcon"
-                          >
-                            <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
-                          </svg>
-                        </div>
+                        <NavLink to="/phonenumber">
+                          <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+                            <svg
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss251 css-vubbuv"
+                              focusable="false"
+                              aria-hidden="true"
+                              viewBox="0 0 24 24"
+                              data-testid="NavigateNextIcon"
+                            >
+                              <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+                            </svg>
+                          </div>
+                        </NavLink>
                       </div>
                     </div>
                   </div>
@@ -123,6 +127,7 @@ export default function add_contact() {
               </div>
             </div>
           </div>
+          {/* Email */}
           <div className="inf_add">
             <div class="jss252">
               <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-3nargb">
@@ -155,17 +160,19 @@ export default function add_contact() {
                     </div>
                     <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
                       <div class="MuiGrid-root MuiGrid-container css-1c87emg">
-                        <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
-                          <svg
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss251 css-vubbuv"
-                            focusable="false"
-                            aria-hidden="true"
-                            viewBox="0 0 24 24"
-                            data-testid="NavigateNextIcon"
-                          >
-                            <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
-                          </svg>
-                        </div>
+                        <NavLink to="/email">
+                          <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+                            <svg
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss251 css-vubbuv"
+                              focusable="false"
+                              aria-hidden="true"
+                              viewBox="0 0 24 24"
+                              data-testid="NavigateNextIcon"
+                            >
+                              <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+                            </svg>
+                          </div>
+                        </NavLink>
                       </div>
                     </div>
                   </div>
@@ -173,7 +180,8 @@ export default function add_contact() {
               </div>
             </div>
           </div>
-          <div className="inf_add" >
+          {/* website  */}
+          <div className="inf_add">
             <div class="jss252">
               <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-3nargb">
                 <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 jss251 css-o0rlmm">
@@ -205,17 +213,19 @@ export default function add_contact() {
                     </div>
                     <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
                       <div class="MuiGrid-root MuiGrid-container css-1c87emg">
-                        <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
-                          <svg
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss251 css-vubbuv"
-                            focusable="false"
-                            aria-hidden="true"
-                            viewBox="0 0 24 24"
-                            data-testid="NavigateNextIcon"
-                          >
-                            <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
-                          </svg>
-                        </div>
+                        <Link to="/Website">
+                          <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+                            <svg
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss251 css-vubbuv"
+                              focusable="false"
+                              aria-hidden="true"
+                              viewBox="0 0 24 24"
+                              data-testid="NavigateNextIcon"
+                            >
+                              <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+                            </svg>
+                          </div>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -223,6 +233,7 @@ export default function add_contact() {
               </div>
             </div>
           </div>
+          {/* address */}
           <div className="inf_add">
             <div class="jss252">
               <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-3nargb">
@@ -255,17 +266,19 @@ export default function add_contact() {
                     </div>
                     <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
                       <div class="MuiGrid-root MuiGrid-container css-1c87emg">
-                        <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
-                          <svg
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss251 css-vubbuv"
-                            focusable="false"
-                            aria-hidden="true"
-                            viewBox="0 0 24 24"
-                            data-testid="NavigateNextIcon"
-                          >
-                            <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
-                          </svg>
-                        </div>
+                        <Link to="/Address">
+                          <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+                            <svg
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss251 css-vubbuv"
+                              focusable="false"
+                              aria-hidden="true"
+                              viewBox="0 0 24 24"
+                              data-testid="NavigateNextIcon"
+                            >
+                              <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+                            </svg>
+                          </div>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -273,6 +286,7 @@ export default function add_contact() {
               </div>
             </div>
           </div>
+          {/* Service */}
           <div className="inf_add">
             <div class="jss252">
               <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-3nargb">
@@ -336,17 +350,19 @@ export default function add_contact() {
                     </div>
                     <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
                       <div class="MuiGrid-root MuiGrid-container css-1c87emg">
-                        <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
-                          <svg
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss251 css-vubbuv"
-                            focusable="false"
-                            aria-hidden="true"
-                            viewBox="0 0 24 24"
-                            data-testid="NavigateNextIcon"
-                          >
-                            <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
-                          </svg>
-                        </div>
+                        <Link to="/service">
+                          <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+                            <svg
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss251 css-vubbuv"
+                              focusable="false"
+                              aria-hidden="true"
+                              viewBox="0 0 24 24"
+                              data-testid="NavigateNextIcon"
+                            >
+                              <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+                            </svg>
+                          </div>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -354,6 +370,7 @@ export default function add_contact() {
               </div>
             </div>
           </div>
+          {/* internet */}
           <div className="inf_add">
             <div class="jss252">
               <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-3nargb">
@@ -434,17 +451,19 @@ export default function add_contact() {
                     </div>
                     <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
                       <div class="MuiGrid-root MuiGrid-container css-1c87emg">
-                        <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
-                          <svg
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss251 css-vubbuv"
-                            focusable="false"
-                            aria-hidden="true"
-                            viewBox="0 0 24 24"
-                            data-testid="NavigateNextIcon"
-                          >
-                            <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
-                          </svg>
-                        </div>
+                        <Link to="/ineternet">
+                          <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+                            <svg
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss251 css-vubbuv"
+                              focusable="false"
+                              aria-hidden="true"
+                              viewBox="0 0 24 24"
+                              data-testid="NavigateNextIcon"
+                            >
+                              <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+                            </svg>
+                          </div>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -452,6 +471,7 @@ export default function add_contact() {
               </div>
             </div>
           </div>
+          {/* ngân hàng */}
           <div className="inf_add">
             <div class="jss252">
               <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-3nargb">
@@ -484,17 +504,19 @@ export default function add_contact() {
                     </div>
                     <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
                       <div class="MuiGrid-root MuiGrid-container css-1c87emg">
-                        <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
-                          <svg
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss251 css-vubbuv"
-                            focusable="false"
-                            aria-hidden="true"
-                            viewBox="0 0 24 24"
-                            data-testid="NavigateNextIcon"
-                          >
-                            <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
-                          </svg>
-                        </div>
+                        <Link to="/bank">
+                          <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+                            <svg
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss251 css-vubbuv"
+                              focusable="false"
+                              aria-hidden="true"
+                              viewBox="0 0 24 24"
+                              data-testid="NavigateNextIcon"
+                            >
+                              <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+                            </svg>
+                          </div>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -502,6 +524,7 @@ export default function add_contact() {
               </div>
             </div>
           </div>
+          {/* Mã số thuế */}
           <div className="inf_add">
             <div class="jss252">
               <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-3nargb">
@@ -534,17 +557,19 @@ export default function add_contact() {
                     </div>
                     <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
                       <div class="MuiGrid-root MuiGrid-container css-1c87emg">
-                        <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
-                          <svg
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss251 css-vubbuv"
-                            focusable="false"
-                            aria-hidden="true"
-                            viewBox="0 0 24 24"
-                            data-testid="NavigateNextIcon"
-                          >
-                            <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
-                          </svg>
-                        </div>
+                        <Link to="/taxcode  ">
+                          <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+                            <svg
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss251 css-vubbuv"
+                              focusable="false"
+                              aria-hidden="true"
+                              viewBox="0 0 24 24"
+                              data-testid="NavigateNextIcon"
+                            >
+                              <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+                            </svg>
+                          </div>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -552,6 +577,7 @@ export default function add_contact() {
               </div>
             </div>
           </div>
+          {/* Thương mai điện tử */}
           <div className="inf_add">
             <div class="jss252">
               <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-3nargb">
@@ -584,17 +610,19 @@ export default function add_contact() {
                     </div>
                     <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
                       <div class="MuiGrid-root MuiGrid-container css-1c87emg">
-                        <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
-                          <svg
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss251 css-vubbuv"
-                            focusable="false"
-                            aria-hidden="true"
-                            viewBox="0 0 24 24"
-                            data-testid="NavigateNextIcon"
-                          >
-                            <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
-                          </svg>
-                        </div>
+                        <Link to="/ecommerce">
+                          <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+                            <svg
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss251 css-vubbuv"
+                              focusable="false"
+                              aria-hidden="true"
+                              viewBox="0 0 24 24"
+                              data-testid="NavigateNextIcon"
+                            >
+                              <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+                            </svg>
+                          </div>
+                        </Link>
                       </div>
                     </div>
                   </div>

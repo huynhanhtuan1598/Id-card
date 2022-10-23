@@ -9,6 +9,15 @@ import form_report from '../component/form_report/report_template';
 import form_group from '../component/form_group/form_group';
 import appearance from '../component/appearance/appearance';
 import add_contact from '../component/add_contact/add_contact';
+import phonenumber from '../component/form_contact/phonenumber/phonenumber';
+import email from '../component/form_contact/email/email';
+import bank from '../component/form_contact/bank/bank';
+import ecommerce from '../component/form_contact/ecommerce/ecommerce';
+import ineternet from '../component/form_contact/internet/internet';
+import service from '../component/form_contact/service/service';
+import taxcode from '../component/form_contact/taxcode/taxcode';
+import Address from '..//component/form_contact/address/address';
+import Website from '../component/form_contact/website/website';
 
 
 
@@ -28,6 +37,20 @@ const publicRoutes = [
     {path: '/form_group', component: form_group}, //trang Group
     {path: '/appearance', component: appearance}, //trang theme
     {path: '/add_contact', component: add_contact}, //trang add_contact
+    
+    // trang thông tin bên add_contact
+    {path: '/phonenumber', component: phonenumber}, //trang Report
+    {path: '/email', component: email}, //trang email
+    {path: '/bank', component: bank}, //trang bank
+    {path: '/ecommerce', component: ecommerce}, //trang thương mai 
+    {path: '/ineternet', component: ineternet}, //trang mạng
+    {path: '/service', component: service}, //trang dịch vụ 
+    {path: '/taxcode', component: taxcode}, //trang thuế
+    {path: '/Address', component: Address}, //trang địa chỉt
+    {path: '/Website', component: Website}, //trang web
+
+
+
 
 
 

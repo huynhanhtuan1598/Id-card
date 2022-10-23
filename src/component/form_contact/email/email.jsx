@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../style.css";
 
 export default function email() {
@@ -6,10 +7,9 @@ export default function email() {
     <div>
       <header class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic jss153 css-qixh7c">
         <div class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-191lty2">
-          <a
+          <Link to='/add_contact'
             class="MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeStart MuiIconButton-sizeMedium css-7vbamj"
             tabindex="0"
-            href="/add-contact"
           >
             <svg
               class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
@@ -21,7 +21,7 @@ export default function email() {
               <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path>
             </svg>
             <span class="MuiTouchRipple-root css-w0pj6f"></span>
-          </a>
+          </Link>
           <h6 class="MuiTypography-root MuiTypography-h6 jss154 css-1anx036">
             Thêm email
           </h6>
@@ -34,13 +34,11 @@ export default function email() {
             <div>
               <p
                 class="MuiTypography-root MuiTypography-body1 css-9l3uo3"
-                style="font-size: 19px; margin-bottom: 5px;"
               >
                 Địa chỉ email của bạn là
               </p>
               <p
                 class="MuiTypography-root MuiTypography-body1 css-9l3uo3"
-                // style="font-size: 15px; color: rgb(120, 120, 120);"
               >
                 Địa chỉ email của bạn sẽ được hiển thị trên trang cá nhân. Khách
                 hàng có thể xem email của bạn và thêm vào danh bạ của khách
@@ -52,9 +50,8 @@ export default function email() {
             <form autocomplete="off">
               <div
                 class="MuiFormControl-root MuiFormControl-fullWidth css-tzsjye"
-                // style="margin-bottom: 20px;"
               >
-                <div class="jss155" style="opacity: 1;">
+                <div class="jss155" >
                   <div class="jss156">Email</div>
                   <input name="content" class="jss157" />
                 </div>
