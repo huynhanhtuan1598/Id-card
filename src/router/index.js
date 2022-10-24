@@ -16,9 +16,10 @@ import ecommerce from '../component/form_contact/ecommerce/ecommerce';
 import ineternet from '../component/form_contact/internet/internet';
 import service from '../component/form_contact/service/service';
 import taxcode from '../component/form_contact/taxcode/taxcode';
-import Address from '..//component/form_contact/address/address';
+import Address from '../component/form_contact/address/address';
 import Website from '../component/form_contact/website/website';
 import Qr_code from '../component/QR_code/qr_code';
+import login from '../page/login/login';
 
 
 
@@ -48,24 +49,11 @@ const publicRoutes = [
     {path: '/taxcode', component: taxcode}, //trang thuế
     {path: '/Address', component: Address}, //trang địa chỉt
     {path: '/Website', component: Website}, //trang web
-    {path: '/qr_code', component: Qr_code}, //Mã QR
+    {path: '/qr_code', component: Qr_code}, //Mã QR\
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    // login
+    {path: '/login', component: login}, //Mã QR\
 
 
 

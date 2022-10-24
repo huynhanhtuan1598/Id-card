@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ThemeProvider from 'react-bootstrap/ThemeProvider';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './page/login/login';
-import { publicRoutes } from './Router/index';
+import { publicRoutes } from './router/index';
 import Profile from './page/home/profile/profile';
 
 
