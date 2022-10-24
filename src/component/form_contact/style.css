@@ -100,7 +100,7 @@
     box-sizing: border-box;
     display: flex;
     flex-flow: column wrap;
-    margin-top: -24px;
+    margin-top: 70px;
     width: calc(100% + 24px);
     margin-left: -24px;
 }
@@ -216,7 +216,7 @@ form {
 .jss136 {
     top: 0;
     color: #424242;
-    padding: 10px 15px;
+    padding: 20px 30px;
     position: absolute;
     font-size: 15px;
 }
@@ -298,6 +298,7 @@ form {
     position: relative;
     font-size: 19px;
     background: transparent;
+    top: -11px;
 }
 
 .css-68o8xu {

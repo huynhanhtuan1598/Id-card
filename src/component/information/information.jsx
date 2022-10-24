@@ -2,6 +2,7 @@ import React from "react";
 import "./infor.css";
 import user from "../../asset/img/user.jfif";
 import { NavLink, Link } from "react-router-dom";
+import QR from '../../asset/img/qr.png';
 
 export default function information() {
   return (
@@ -420,6 +421,86 @@ export default function information() {
                 </div>
               </div>
             </div>
+            <div>
+              <div className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-direction-xs-column css-q5k7tr">
+                <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+                  <h6 class="MuiTypography-root MuiTypography-subtitle2 css-c7dfze">
+                    Mã QR 
+                  </h6>
+                </div>
+              </div>
+              <div>
+                <div
+                  data-rbd-droppable-id="droppable"
+                  data-rbd-droppable-context-id="0"
+                >
+                  <div
+                    data-rbd-draggable-context-id="0"
+                    data-rbd-draggable-id="633d50e50c0dbe270558e4f2"
+                    tabindex="0"
+                    role="button"
+                    aria-describedby="rbd-hidden-text-0-hidden-text-0"
+                    data-rbd-drag-handle-draggable-id="633d50e50c0dbe270558e4f2"
+                    data-rbd-drag-handle-context-id="0"
+                    draggable="false"
+                  >
+                    <div>
+                      <div class="jss88">
+                        <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-3nargb">
+                          <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 jss87 css-o0rlmm">
+                            <div class="MuiGrid-root MuiGrid-container css-1cn3yto">
+                              <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+                                <img src={QR} alt="Mã QR" className="edit_qr"/>
+                                {/* <svg
+                                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                  focusable="false"
+                                  aria-hidden="true"
+                                  viewBox="0 0 24 24"
+                                  data-testid="PhoneIcon"
+                                >
+                                  <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path>
+                                </svg>{" "} */}
+                              </div>
+                            </div>
+                          </div>
+                          <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 css-1v3pb4k">
+                            <div class="MuiGrid-root MuiGrid-container css-v3z1wi">
+                              <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-11 css-9yaf8t">
+                                <p class="MuiTypography-root MuiTypography-body2 jss89 css-68o8xu">
+                                   Mã QR
+                                </p>
+                                <div>
+                                  <h6 class="MuiTypography-root MuiTypography-subtitle1 jss91 css-16rlg6l">
+
+                                  </h6>
+                                </div>
+                              </div>
+                              <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
+                                <div class="MuiGrid-root MuiGrid-container css-1c87emg">
+                                  <Link to="/qr_code">
+                                    <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+                                      <svg
+                                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss87 css-vubbuv"
+                                        focusable="false"
+                                        aria-hidden="true"
+                                        viewBox="0 0 24 24"
+                                        data-testid="NavigateNextIcon"
+                                      >
+                                        <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+                                      </svg>
+                                    </div>
+                                  </Link>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div className="jss79">
               <hr className="MuiDivider-root MuiDivider-fullWidth css-39bbo6" />
               <div className="MuiGrid-root MuiGrid-container css-1c87emg">
@@ -441,6 +522,7 @@ export default function information() {
               </div>
             </div>
           </div>
+          
         </div>
       </div>
     </div>

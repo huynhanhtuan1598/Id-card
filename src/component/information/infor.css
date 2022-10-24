@@ -321,6 +321,10 @@ p {
     border-radius: inherit;
 }
 
+/* Mã QR */
+.edit_qr{
+    width: 30px;
+}
 
 
 
