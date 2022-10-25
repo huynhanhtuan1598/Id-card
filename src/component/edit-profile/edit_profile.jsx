@@ -40,7 +40,7 @@ export default function edit_profile() {
               <div className="MuiFormControl-root MuiFormControl-fullWidth css-tzsjye">
                 <div className="input_name">
                   <div className="name_input">Họ tên</div>
-                  <input name="value" value="Hàn Tiến Nhật"></input>
+                  <input name="value" ></input>
                 </div>
               </div>
               <button

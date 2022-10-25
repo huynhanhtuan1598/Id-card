@@ -333,6 +333,34 @@ p {
 
 
 /* màn hình user */
+@media (min-width: 400px) {
+    .css-1m6pqln {
+        max-width: 600px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .css-9yaf8t {
+        flex-basis: 91.6667%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 91.6667%;
+    }
+    .css-we0np1 {
+        flex-basis: 100%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 100%;
+    }
+    .css-1v3pb4k {
+        box-sizing: border-box;
+        margin: 0px;
+        flex-direction: row;
+        flex-basis: 83.3333%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 83.3333%;
+    }
+}
 @media (min-width: 600px) {
     .css-1m6pqln {
         max-width: 600px;

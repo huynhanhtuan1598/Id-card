@@ -9,8 +9,6 @@ export default function profile() {
       <Header />
       <Information />
       <Footer/>
-      
-      
     </>
   );
 }

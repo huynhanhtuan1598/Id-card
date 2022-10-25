@@ -20,6 +20,7 @@ import Address from '../component/form_contact/address/address';
 import Website from '../component/form_contact/website/website';
 import Qr_code from '../component/QR_code/qr_code';
 import login from '../page/login/login';
+import Calendar1 from '../component/calendar/calendar';
 
 
 
@@ -50,6 +51,8 @@ const publicRoutes = [
     {path: '/Address', component: Address}, //trang địa chỉt
     {path: '/Website', component: Website}, //trang web
     {path: '/qr_code', component: Qr_code}, //Mã QR\
+    {path: '/Calendar1', component: Calendar1}, //Mã QR\
+
 
 
     // login
