@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./infor.css";
 import user from "../../asset/img/user.jfif";
 import { NavLink, Link } from "react-router-dom";
-import QR from '../../asset/img/qr.png';
+import QR from "../../asset/img/qr.png";
+import {useSelector } from "react-redux";
 
-export default function information() {
+export default function Information() {
+  const [avatar, setAvatar] = useState();
+  useEffect(() => {
+    return () => {
+      avatar && URL.revokeObjectURL(avatar.preview);
+    };
+  }, [avatar]);
+
+  const handleAvatar = (e) => {
+    const file = e.target.files[0];
+    file.preview = URL.createObjectURL(file);
+    setAvatar(file);
+  };
+
+  const user = useSelector((state) => state.user);
+
   return (
     <div className="jss74">
       <div className="MuiContainer-root MuiContainer-maxWidthSm css-1m6pqln">
@@ -12,9 +28,31 @@ export default function information() {
           <div className="MuiGrid-root MuiGrid-item css-1wxaqej">
             <div className="MuiBox-root css-dfpqc0">
               <div className="MuiAvatar-root MuiAvatar-circular jss85 css-3i9vrz">
-                <img src={user} class="MuiAvatar-img css-1hy9t21" />
+                {/* <img src={user} class="MuiAvatar-img css-1hy9t21" /> */}
+                {avatar && <img src={avatar.preview} alt="" width="100%"  class="MuiAvatar-img css-1hy9t21"/>}
               </div>
+
               <div class="MuiBox-root css-tcfod9">
+                <label for="Penimg" className="label-pen">
+                  <svg
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-8feus5"
+                    focusable="false"
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    data-testid="EditIcon"
+                  >
+                    <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
+                  </svg>
+                </label>
+              </div>
+
+              <input
+                className="input-pen"
+                id="Penimg"
+                type="file"
+                onChange={handleAvatar}
+              />
+              {/* <div class="MuiBox-root css-tcfod9">
                 <svg
                   class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-8feus5"
                   focusable="false"
@@ -24,7 +62,7 @@ export default function information() {
                 >
                   <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
                 </svg>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="MuiGrid-root MuiGrid-item jss73 css-1wxaqej">
@@ -57,13 +95,13 @@ export default function information() {
                         </p>
                         <div>
                           <h6 class="MuiTypography-root MuiTypography-subtitle1 jss91 css-16rlg6l">
-                            Hàn Tiến Nhật
+                            {user}
                           </h6>
                         </div>
                       </div>
                       <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
                         <div class="MuiGrid-root MuiGrid-container css-1c87emg">
-                          <Link strict to="/home/edit_profile">
+                          <Link strict to="/edit_profile">
                             <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
                               <svg
                                 class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss87 css-vubbuv"
@@ -114,20 +152,19 @@ export default function information() {
                         </div>
                         <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
                           <div class="MuiGrid-root MuiGrid-container css-1c87emg">
-                            <Link to='/Calendar1'>
-                            <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
-                              <svg
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss87 css-vubbuv"
-                                focusable="false"
-                                aria-hidden="true"
-                                viewBox="0 0 24 24"
-                                data-testid="NavigateNextIcon"
-                              >
-                                <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
-                              </svg>
-                            </div>
+                            <Link to="/Calendar1">
+                              <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+                                <svg
+                                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss87 css-vubbuv"
+                                  focusable="false"
+                                  aria-hidden="true"
+                                  viewBox="0 0 24 24"
+                                  data-testid="NavigateNextIcon"
+                                >
+                                  <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+                                </svg>
+                              </div>
                             </Link>
-                           
                           </div>
                         </div>
                       </div>
@@ -428,7 +465,7 @@ export default function information() {
               <div className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-direction-xs-column css-q5k7tr">
                 <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
                   <h6 class="MuiTypography-root MuiTypography-subtitle2 css-c7dfze">
-                    Mã QR 
+                    Mã QR
                   </h6>
                 </div>
               </div>
@@ -453,7 +490,7 @@ export default function information() {
                           <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 jss87 css-o0rlmm">
                             <div class="MuiGrid-root MuiGrid-container css-1cn3yto">
                               <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
-                                <img src={QR} alt="Mã QR" className="edit_qr"/>
+                                <img src={QR} alt="Mã QR" className="edit_qr" />
                                 {/* <svg
                                   class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
                                   focusable="false"
@@ -470,12 +507,10 @@ export default function information() {
                             <div class="MuiGrid-root MuiGrid-container css-v3z1wi">
                               <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-11 css-9yaf8t">
                                 <p class="MuiTypography-root MuiTypography-body2 jss89 css-68o8xu">
-                                   Mã QR
+                                  Mã QR
                                 </p>
                                 <div>
-                                  <h6 class="MuiTypography-root MuiTypography-subtitle1 jss91 css-16rlg6l">
-
-                                  </h6>
+                                  <h6 class="MuiTypography-root MuiTypography-subtitle1 jss91 css-16rlg6l"></h6>
                                 </div>
                               </div>
                               <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
@@ -525,7 +560,6 @@ export default function information() {
               </div>
             </div>
           </div>
-          
         </div>
       </div>
     </div>

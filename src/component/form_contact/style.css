@@ -596,7 +596,7 @@ form {
 .jss11 {
     height: 60px;
     font-size: 16px;
-    background: #165FE6;
+    /* background: #165FE6; */
     box-shadow: none;
     border-radius: 10px;
     text-transform: none;

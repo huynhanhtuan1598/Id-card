@@ -53,6 +53,7 @@
     width: 150px;
     height: 150px;
     object-fit: cover;
+    margin-left: 78px;
 }
 
 
@@ -325,6 +326,15 @@ p {
 .edit_qr{
     width: 30px;
 }
+
+
+/* .label-pen{} */
+.input-pen{
+    visibility: hidden;
+}
+
+
+
 
 
 

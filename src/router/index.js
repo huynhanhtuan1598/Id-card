@@ -26,8 +26,7 @@ import Calendar1 from '../component/calendar/calendar';
 
 const publicRoutes = [
     {path: '/', component: Home}, //trang chủ thông tin
-    {path: '/home', component: Home}, //trang chủ thông tin
-    {path: '/home/edit_profile', component: edit_profile}, //trang chủ thông tin
+    {path: '/edit_profile', component: edit_profile}, //trang chủ thông tin
     {path: '/company', component: company}, //thông tin công ty
     {path: '/career', component: career}, //trang chức vụ
     {path: '/hash_url', component: hash_url}, //trang tên ngươi dùng
