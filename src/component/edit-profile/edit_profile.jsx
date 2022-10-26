@@ -1,41 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
-import { Provider, useDispatch, useSelector } from "react-redux";
-import { configureStore, createSlice } from "@reduxjs/toolkit";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useNavigate
-} from "react-router-dom";
+
 
 
 
 export default function Edit_profile() {
-  const userSlice = createSlice({
-    name: "user",
-    initialState: "",
-    reducers: {
-      saveUser: (state, action) => action.payload
-    }
-  });
   
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
-
-  const [name, setName] = useState("");
-
-  const handleSubmitForm = (e) => {
-    e.preventDefault();
-    dispatch(userSlice.actions.saveUser(name));
-    console.log(e.target.value)
-    navigate("/");
-  };
-
-  const handleChangeName = (text) => {
-    setName(text);
-  };
 
   return (
     <div>
@@ -78,21 +49,13 @@ export default function Edit_profile() {
               <div className="MuiFormControl-root MuiFormControl-fullWidth css-tzsjye">
                 <div className="input_name">
                   <div className="name_input">Họ tên</div>
-                  {/* <input id="value_name"  name="value" ></input> */}
-                  <input
-                    type="text"
-                    name="name"
-                    value={name}
-                    onChange={(e) => handleChangeName(e.target.value)}
-                    placeholder="Jane Doe"
-                  />
+                  <input id="value_name"  name="value" ></input>
                 </div>
               </div>
               <button
                 class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth MuiButtonBase-root jss36 css-1qelgoy"
                 tabindex="0"
                 type="submit"
-                disabled={!name}
               > 
                 Lưu thông tin
                 <span class="MuiTouchRipple-root css-w0pj6f"></span>

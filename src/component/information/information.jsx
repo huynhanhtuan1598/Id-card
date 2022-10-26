@@ -19,7 +19,6 @@ export default function Information() {
     setAvatar(file);
   };
 
-  const user = useSelector((state) => state.user);
 
   return (
     <div className="jss74">
