@@ -45,11 +45,13 @@ export default function Edit_profile() {
             </p>
           </div>
           <div className="MuiGrid-root MuiGrid-item css-1wxaqej">
-            <form autocomplete="off" onSubmit={handleSubmitForm}>
+            <form autocomplete="off">
               <div className="MuiFormControl-root MuiFormControl-fullWidth css-tzsjye">
                 <div className="input_name">
                   <div className="name_input">Họ tên</div>
-                  <input id="value_name"  name="value" ></input>
+                  <input id="value_name"  name="value" >
+                      
+                  </input>
                 </div>
               </div>
               <button

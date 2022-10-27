@@ -1,19 +1,20 @@
 const initialState = {
-    carts: 0
+    list: ['Listening to music'],
+    selectedId: null,
 }
 
-export const hobbyReducer = (state=initialState, action) => {
+export const hobbyReducer = (state = initialState, action) => {
     switch (action.type) {
         case 'ADD_HOBBY': {
-            state.carts +=1;
-            console.log(state.carts)
-            return state
-        }
-
-        case 'SET_ACTIVE_HOBBY' : {
-            break;
+            const newList = [...state.list];
+            newList.push(action.payload);
+            return {
+                ...state,
+                list: newList,
+            }
         }
         default:
             return state;
     }
-}
+};
+// export default hobbyReducer;

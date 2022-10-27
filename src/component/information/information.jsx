@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./infor.css";
-import user from "../../asset/img/user.jfif";
+// import user from "../../asset/img/user.jfif";
 import { NavLink, Link } from "react-router-dom";
 import QR from "../../asset/img/qr.png";
 import {useSelector } from "react-redux";
 
-export default function Information() {
+export default function Information(props) {
+
   const [avatar, setAvatar] = useState();
   useEffect(() => {
     return () => {
@@ -19,6 +20,32 @@ export default function Information() {
     setAvatar(file);
   };
 
+  const imageUpload = async (e, idImg) => {
+    var fileIn = e.target;
+    var file = fileIn.files[0];
+    if (file && file.size < 5e6) {
+        const formData = new FormData();
+        formData.append("file", file);
+        formData.append("upload_preset", "nghiephh")
+        formData.append("mode", 'no-cors')
+        try {
+                await fetch('https://api.cloudinary.com/v1_1/nghiephh/image/upload', {
+                    method: 'POST',
+                    body: formData,
+                })
+                    .then((response) => response.json())
+                    .then((response) => {
+                        e.preventDefault();
+                        console.log(response.secure_url)
+                    });
+        } catch (error) {
+            console.log(error);
+        }
+    } else {
+        alert("file Quá Lớn");
+    }
+}
+
 
   return (
     <div className="jss74">
@@ -27,8 +54,8 @@ export default function Information() {
           <div className="MuiGrid-root MuiGrid-item css-1wxaqej">
             <div className="MuiBox-root css-dfpqc0">
               <div className="MuiAvatar-root MuiAvatar-circular jss85 css-3i9vrz">
-                {/* <img src={user} class="MuiAvatar-img css-1hy9t21" /> */}
-                {avatar && <img src={avatar.preview} alt="" width="100%"  class="MuiAvatar-img css-1hy9t21"/>}
+                <img src='' class="MuiAvatar-img css-1hy9t21" />
+                {/* {avatar && <img src={avatar.preview} alt="" width="100%"  class="MuiAvatar-img css-1hy9t21"/>} */}
               </div>
 
               <div class="MuiBox-root css-tcfod9">
@@ -49,7 +76,7 @@ export default function Information() {
                 className="input-pen"
                 id="Penimg"
                 type="file"
-                onChange={handleAvatar}
+                onChange={(e) => imageUpload(e)}
               />
               {/* <div class="MuiBox-root css-tcfod9">
                 <svg
@@ -94,7 +121,9 @@ export default function Information() {
                         </p>
                         <div>
                           <h6 class="MuiTypography-root MuiTypography-subtitle1 jss91 css-16rlg6l">
-                            {user}
+                            {/* {user} */}
+                            {props.name}
+
                           </h6>
                         </div>
                       </div>
