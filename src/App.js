@@ -11,9 +11,7 @@ import Profile from './page/home/profile/profile';
 
 
 function App() {
-  console.log(publicRoutes)
   return (
-
     <div className="App">
       <ThemeProvider
         breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
@@ -27,10 +25,8 @@ function App() {
           })}
         </Routes>
       </ThemeProvider>
-
       {/* <Profile/> */}
     </div>
-
   );
 }
 
