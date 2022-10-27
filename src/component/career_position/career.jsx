@@ -1,7 +1,19 @@
-import React from 'react'
+import React, {useState} from 'react'
+import { useSelector, useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { Link } from 'react-router-dom'
 
-export default function career() {
+export default function Career() {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const [position, setPosition] = useState(useSelector((state) => state.user.position));
+  const savePosition = () => {
+    dispatch({
+      type: "EDIT_POSITION",
+      payload: { position: position },
+    });
+    navigate('/')
+  };
   return (
     <div>
       <header class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic jss173 css-qixh7c">
@@ -48,13 +60,14 @@ export default function career() {
                   <div className="css_cty">
                     <b>Chức Vụ</b>
                   </div>
-                  <input name="value" value="CEO"/>
+                  <input name="value" value={position} onChange={e => setPosition(e.target.value)}/>
                   </div>
               </div>
               <button
                 class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth MuiButtonBase-root jss175 css-1qelgoy"
                 tabindex="0"
-                type="submit"
+                type="button"
+                onClick={savePosition}
               >
                 {" "}
                 Lưu thông tin
