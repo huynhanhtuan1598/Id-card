@@ -3,9 +3,13 @@ import "./infor.css";
 // import user from "../../asset/img/user.jfif";
 import { NavLink, Link } from "react-router-dom";
 import QR from "../../asset/img/qr.png";
-import {useSelector } from "react-redux";
+import {useSelector, useDispatch } from "react-redux";
 
 export default function Information(props) {
+  const name = useSelector(state => state.user.name)
+  const birthday = useSelector(state => state.user.birthday)
+  const company = useSelector(state => state.user.company)
+  const position = useSelector(state => state.user.position)
 
   const [avatar, setAvatar] = useState();
   useEffect(() => {
@@ -46,7 +50,6 @@ export default function Information(props) {
     }
 }
 
-
   return (
     <div className="jss74">
       <div className="MuiContainer-root MuiContainer-maxWidthSm css-1m6pqln">
@@ -54,14 +57,14 @@ export default function Information(props) {
           <div className="MuiGrid-root MuiGrid-item css-1wxaqej">
             <div className="MuiBox-root css-dfpqc0">
               <div className="MuiAvatar-root MuiAvatar-circular jss85 css-3i9vrz">
-                <img src='' class="MuiAvatar-img css-1hy9t21" />
-                {/* {avatar && <img src={avatar.preview} alt="" width="100%"  class="MuiAvatar-img css-1hy9t21"/>} */}
+                <img src='' className="MuiAvatar-img css-1hy9t21" />
+                {/* {avatar && <img src={avatar.preview} alt="" width="100%"  className="MuiAvatar-img css-1hy9t21"/>} */}
               </div>
 
-              <div class="MuiBox-root css-tcfod9">
-                <label for="Penimg" className="label-pen">
+              <div className="MuiBox-root css-tcfod9">
+                <label htmlFor="Penimg" className="label-pen">
                   <svg
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-8feus5"
+                    className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-8feus5"
                     focusable="false"
                     aria-hidden="true"
                     viewBox="0 0 24 24"
@@ -78,9 +81,9 @@ export default function Information(props) {
                 type="file"
                 onChange={(e) => imageUpload(e)}
               />
-              {/* <div class="MuiBox-root css-tcfod9">
+              {/* <div className="MuiBox-root css-tcfod9">
                 <svg
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-8feus5"
+                  className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-8feus5"
                   focusable="false"
                   aria-hidden="true"
                   viewBox="0 0 24 24"
@@ -93,7 +96,7 @@ export default function Information(props) {
           </div>
           <div className="MuiGrid-root MuiGrid-item jss73 css-1wxaqej">
             <div className="css-ikzlcq">
-              <h6 class="MuiTypography-root MuiTypography-subtitle2 css-c7dfze">
+              <h6 className="MuiTypography-root MuiTypography-subtitle2 css-c7dfze">
                 Giới thiệu
               </h6>
               <div className="jss88">
@@ -102,7 +105,7 @@ export default function Information(props) {
                     <div className="MuiGrid-root MuiGrid-container css-1cn3yto">
                       <div className="MuiGrid-root MuiGrid-item css-1wxaqej">
                         <svg
-                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
                           focusable="false"
                           aria-hidden="true"
                           viewBox="0 0 24 24"
@@ -115,24 +118,24 @@ export default function Information(props) {
                   </div>
                   <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 css-1v3pb4k">
                     <div className="MuiGrid-root MuiGrid-container css-v3z1wi">
-                      <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-11 css-9yaf8t">
-                        <p class="MuiTypography-root MuiTypography-body2 jss89 css-68o8xu">
+                      <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-11 css-9yaf8t">
+                        <p className="MuiTypography-root MuiTypography-body2 jss89 css-68o8xu">
                           Họ tên
                         </p>
                         <div>
-                          <h6 class="MuiTypography-root MuiTypography-subtitle1 jss91 css-16rlg6l">
+                          <h6 className="MuiTypography-root MuiTypography-subtitle1 jss91 css-16rlg6l">
                             {/* {user} */}
-                            {props.name}
+                            {name}
 
                           </h6>
                         </div>
                       </div>
-                      <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
-                        <div class="MuiGrid-root MuiGrid-container css-1c87emg">
-                          <Link strict to="/edit_profile">
-                            <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+                      <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
+                        <div className="MuiGrid-root MuiGrid-container css-1c87emg">
+                          <Link to="/edit_profile">
+                            <div className="MuiGrid-root MuiGrid-item css-1wxaqej">
                               <svg
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss87 css-vubbuv"
+                                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss87 css-vubbuv"
                                 focusable="false"
                                 aria-hidden="true"
                                 viewBox="0 0 24 24"
@@ -149,13 +152,13 @@ export default function Information(props) {
                 </div>
               </div>
               <span>
-                <div class="jss88">
-                  <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-3nargb">
-                    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 jss87 css-o0rlmm">
-                      <div class="MuiGrid-root MuiGrid-container css-1cn3yto">
-                        <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+                <div className="jss88">
+                  <div className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-3nargb">
+                    <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 jss87 css-o0rlmm">
+                      <div className="MuiGrid-root MuiGrid-container css-1cn3yto">
+                        <div className="MuiGrid-root MuiGrid-item css-1wxaqej">
                           <svg
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
                             focusable="false"
                             aria-hidden="true"
                             viewBox="0 0 24 24"
@@ -166,24 +169,22 @@ export default function Information(props) {
                         </div>
                       </div>
                     </div>
-                    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 css-1v3pb4k">
-                      <div class="MuiGrid-root MuiGrid-container css-v3z1wi">
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-11 css-9yaf8t">
-                          <p class="MuiTypography-root MuiTypography-body2 jss89 css-68o8xu">
+                    <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 css-1v3pb4k">
+                      <div className="MuiGrid-root MuiGrid-container css-v3z1wi">
+                        <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-11 css-9yaf8t">
+                          <p className="MuiTypography-root MuiTypography-body2 jss89 css-68o8xu">
                             Ngày sinh
                           </p>
                           <div>
-                            <h6 class="MuiTypography-root MuiTypography-subtitle2 jss90 css-c7dfze">
-                              Chọn ngày sinh
-                            </h6>
+                            {birthday}
                           </div>
                         </div>
-                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
-                          <div class="MuiGrid-root MuiGrid-container css-1c87emg">
+                        <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
+                          <div className="MuiGrid-root MuiGrid-container css-1c87emg">
                             <Link to="/Calendar1">
-                              <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+                              <div className="MuiGrid-root MuiGrid-item css-1wxaqej">
                                 <svg
-                                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss87 css-vubbuv"
+                                  className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss87 css-vubbuv"
                                   focusable="false"
                                   aria-hidden="true"
                                   viewBox="0 0 24 24"
@@ -200,13 +201,13 @@ export default function Information(props) {
                   </div>
                 </div>
               </span>
-              <div class="jss88">
-                <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-3nargb">
-                  <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 jss87 css-o0rlmm">
-                    <div class="MuiGrid-root MuiGrid-container css-1cn3yto">
-                      <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+              <div className="jss88">
+                <div className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-3nargb">
+                  <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 jss87 css-o0rlmm">
+                    <div className="MuiGrid-root MuiGrid-container css-1cn3yto">
+                      <div className="MuiGrid-root MuiGrid-item css-1wxaqej">
                         <svg
-                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
                           focusable="false"
                           aria-hidden="true"
                           viewBox="0 0 24 24"
@@ -217,24 +218,24 @@ export default function Information(props) {
                       </div>
                     </div>
                   </div>
-                  <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 css-1v3pb4k">
-                    <div class="MuiGrid-root MuiGrid-container css-v3z1wi">
-                      <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-11 css-9yaf8t">
-                        <p class="MuiTypography-root MuiTypography-body2 jss89 css-68o8xu">
+                  <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 css-1v3pb4k">
+                    <div className="MuiGrid-root MuiGrid-container css-v3z1wi">
+                      <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-11 css-9yaf8t">
+                        <p className="MuiTypography-root MuiTypography-body2 jss89 css-68o8xu">
                           Công ty
                         </p>
                         <div>
-                          <h6 class="MuiTypography-root MuiTypography-subtitle1 jss91 css-16rlg6l">
-                            HN-TOP.VN
+                          <h6 className="MuiTypography-root MuiTypography-subtitle1 jss91 css-16rlg6l">
+                            {company}
                           </h6>
                         </div>
                       </div>
-                      <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
-                        <div class="MuiGrid-root MuiGrid-container css-1c87emg">
+                      <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
+                        <div className="MuiGrid-root MuiGrid-container css-1c87emg">
                           <Link to="/company">
-                            <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+                            <div className="MuiGrid-root MuiGrid-item css-1wxaqej">
                               <svg
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss87 css-vubbuv"
+                                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss87 css-vubbuv"
                                 focusable="false"
                                 aria-hidden="true"
                                 viewBox="0 0 24 24"
@@ -250,13 +251,13 @@ export default function Information(props) {
                   </div>
                 </div>
               </div>
-              <div class="jss88">
-                <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-3nargb">
-                  <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 jss87 css-o0rlmm">
-                    <div class="MuiGrid-root MuiGrid-container css-1cn3yto">
-                      <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+              <div className="jss88">
+                <div className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-3nargb">
+                  <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 jss87 css-o0rlmm">
+                    <div className="MuiGrid-root MuiGrid-container css-1cn3yto">
+                      <div className="MuiGrid-root MuiGrid-item css-1wxaqej">
                         <svg
-                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
                           focusable="false"
                           aria-hidden="true"
                           viewBox="0 0 24 24"
@@ -267,24 +268,24 @@ export default function Information(props) {
                       </div>
                     </div>
                   </div>
-                  <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 css-1v3pb4k">
-                    <div class="MuiGrid-root MuiGrid-container css-v3z1wi">
-                      <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-11 css-9yaf8t">
-                        <p class="MuiTypography-root MuiTypography-body2 jss89 css-68o8xu">
+                  <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 css-1v3pb4k">
+                    <div className="MuiGrid-root MuiGrid-container css-v3z1wi">
+                      <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-11 css-9yaf8t">
+                        <p className="MuiTypography-root MuiTypography-body2 jss89 css-68o8xu">
                           Chức vụ
                         </p>
                         <div>
-                          <h6 class="MuiTypography-root MuiTypography-subtitle1 jss91 css-16rlg6l">
-                            CEO
+                          <h6 className="MuiTypography-root MuiTypography-subtitle1 jss91 css-16rlg6l">
+                            {position}
                           </h6>
                         </div>
                       </div>
-                      <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
-                        <div class="MuiGrid-root MuiGrid-container css-1c87emg">
+                      <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
+                        <div className="MuiGrid-root MuiGrid-container css-1c87emg">
                           <Link to="/career">
-                            <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+                            <div className="MuiGrid-root MuiGrid-item css-1wxaqej">
                               <svg
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss87 css-vubbuv"
+                                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss87 css-vubbuv"
                                 focusable="false"
                                 aria-hidden="true"
                                 viewBox="0 0 24 24"
@@ -302,18 +303,18 @@ export default function Information(props) {
               </div>
             </div>
           </div>
-          <div class="MuiGrid-root MuiGrid-item jss73 css-1wxaqej">
-            <div class="css-ikzlcq">
-              <h6 class="MuiTypography-root MuiTypography-subtitle2 css-c7dfze">
+          <div className="MuiGrid-root MuiGrid-item jss73 css-1wxaqej">
+            <div className="css-ikzlcq">
+              <h6 className="MuiTypography-root MuiTypography-subtitle2 css-c7dfze">
                 Cài đặt
               </h6>
-              <div class="jss88">
-                <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-3nargb">
-                  <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 jss87 css-o0rlmm">
-                    <div class="MuiGrid-root MuiGrid-container css-1cn3yto">
-                      <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+              <div className="jss88">
+                <div className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-3nargb">
+                  <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 jss87 css-o0rlmm">
+                    <div className="MuiGrid-root MuiGrid-container css-1cn3yto">
+                      <div className="MuiGrid-root MuiGrid-item css-1wxaqej">
                         <svg
-                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
                           focusable="false"
                           aria-hidden="true"
                           viewBox="0 0 24 24"
@@ -324,24 +325,24 @@ export default function Information(props) {
                       </div>
                     </div>
                   </div>
-                  <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 css-1v3pb4k">
-                    <div class="MuiGrid-root MuiGrid-container css-v3z1wi">
-                      <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-11 css-9yaf8t">
-                        <p class="MuiTypography-root MuiTypography-body2 jss89 css-68o8xu">
+                  <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 css-1v3pb4k">
+                    <div className="MuiGrid-root MuiGrid-container css-v3z1wi">
+                      <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-11 css-9yaf8t">
+                        <p className="MuiTypography-root MuiTypography-body2 jss89 css-68o8xu">
                           Tên người dùng
                         </p>
                         <div>
-                          <h6 class="MuiTypography-root MuiTypography-subtitle1 jss91 css-16rlg6l">
-                            hantiennhat
+                          <h6 className="MuiTypography-root MuiTypography-subtitle1 jss91 css-16rlg6l">
+                            {name}
                           </h6>
                         </div>
                       </div>
-                      <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
-                        <div class="MuiGrid-root MuiGrid-container css-1c87emg">
+                      <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
+                        <div className="MuiGrid-root MuiGrid-container css-1c87emg">
                           <Link to="/hash_url">
-                            <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+                            <div className="MuiGrid-root MuiGrid-item css-1wxaqej">
                               <svg
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss87 css-vubbuv"
+                                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss87 css-vubbuv"
                                 focusable="false"
                                 aria-hidden="true"
                                 viewBox="0 0 24 24"
@@ -357,13 +358,13 @@ export default function Information(props) {
                   </div>
                 </div>
               </div>
-              <div class="jss88">
-                <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-3nargb">
-                  <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 jss87 css-o0rlmm">
-                    <div class="MuiGrid-root MuiGrid-container css-1cn3yto">
-                      <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+              <div className="jss88">
+                <div className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-3nargb">
+                  <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 jss87 css-o0rlmm">
+                    <div className="MuiGrid-root MuiGrid-container css-1cn3yto">
+                      <div className="MuiGrid-root MuiGrid-item css-1wxaqej">
                         <svg
-                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                          className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
                           focusable="false"
                           aria-hidden="true"
                           viewBox="0 0 24 24"
@@ -374,24 +375,24 @@ export default function Information(props) {
                       </div>
                     </div>
                   </div>
-                  <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 css-1v3pb4k">
-                    <div class="MuiGrid-root MuiGrid-container css-v3z1wi">
-                      <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-11 css-9yaf8t">
-                        <p class="MuiTypography-root MuiTypography-body2 jss89 css-68o8xu">
+                  <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 css-1v3pb4k">
+                    <div className="MuiGrid-root MuiGrid-container css-v3z1wi">
+                      <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-11 css-9yaf8t">
+                        <p className="MuiTypography-root MuiTypography-body2 jss89 css-68o8xu">
                           Ngôn ngữ
                         </p>
                         <div>
-                          <h6 class="MuiTypography-root MuiTypography-subtitle1 jss91 css-16rlg6l">
+                          <h6 className="MuiTypography-root MuiTypography-subtitle1 jss91 css-16rlg6l">
                             Việt Nam
                           </h6>
                         </div>
                       </div>
-                      <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
-                        <div class="MuiGrid-root MuiGrid-container css-1c87emg">
+                      <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
+                        <div className="MuiGrid-root MuiGrid-container css-1c87emg">
                           <Link to="/from_lang">
-                            <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+                            <div className="MuiGrid-root MuiGrid-item css-1wxaqej">
                               <svg
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss87 css-vubbuv"
+                                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss87 css-vubbuv"
                                 focusable="false"
                                 aria-hidden="true"
                                 viewBox="0 0 24 24"
@@ -412,8 +413,8 @@ export default function Information(props) {
           <div className="MuiGrid-root MuiGrid-item jss73 css-1wxaqej">
             <div>
               <div className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-direction-xs-column css-q5k7tr">
-                <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
-                  <h6 class="MuiTypography-root MuiTypography-subtitle2 css-c7dfze">
+                <div className="MuiGrid-root MuiGrid-item css-1wxaqej">
+                  <h6 className="MuiTypography-root MuiTypography-subtitle2 css-c7dfze">
                     Thông tin liên hệ
                   </h6>
                 </div>
@@ -426,7 +427,7 @@ export default function Information(props) {
                   <div
                     data-rbd-draggable-context-id="0"
                     data-rbd-draggable-id="633d50e50c0dbe270558e4f2"
-                    tabindex="0"
+                    tabIndex="0"
                     role="button"
                     aria-describedby="rbd-hidden-text-0-hidden-text-0"
                     data-rbd-drag-handle-draggable-id="633d50e50c0dbe270558e4f2"
@@ -434,13 +435,13 @@ export default function Information(props) {
                     draggable="false"
                   >
                     <div>
-                      <div class="jss88">
-                        <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-3nargb">
-                          <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 jss87 css-o0rlmm">
-                            <div class="MuiGrid-root MuiGrid-container css-1cn3yto">
-                              <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+                      <div className="jss88">
+                        <div className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-3nargb">
+                          <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 jss87 css-o0rlmm">
+                            <div className="MuiGrid-root MuiGrid-container css-1cn3yto">
+                              <div className="MuiGrid-root MuiGrid-item css-1wxaqej">
                                 <svg
-                                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                  className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
                                   focusable="false"
                                   aria-hidden="true"
                                   viewBox="0 0 24 24"
@@ -451,24 +452,24 @@ export default function Information(props) {
                               </div>
                             </div>
                           </div>
-                          <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 css-1v3pb4k">
-                            <div class="MuiGrid-root MuiGrid-container css-v3z1wi">
-                              <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-11 css-9yaf8t">
-                                <p class="MuiTypography-root MuiTypography-body2 jss89 css-68o8xu">
+                          <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 css-1v3pb4k">
+                            <div className="MuiGrid-root MuiGrid-container css-v3z1wi">
+                              <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-11 css-9yaf8t">
+                                <p className="MuiTypography-root MuiTypography-body2 jss89 css-68o8xu">
                                   Số cá nhân{" "}
                                 </p>
                                 <div>
-                                  <h6 class="MuiTypography-root MuiTypography-subtitle1 jss91 css-16rlg6l">
+                                  <h6 className="MuiTypography-root MuiTypography-subtitle1 jss91 css-16rlg6l">
                                     0966625553
                                   </h6>
                                 </div>
                               </div>
-                              <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
-                                <div class="MuiGrid-root MuiGrid-container css-1c87emg">
+                              <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
+                                <div className="MuiGrid-root MuiGrid-container css-1c87emg">
                                   <Link to="/contact_user">
-                                    <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+                                    <div className="MuiGrid-root MuiGrid-item css-1wxaqej">
                                       <svg
-                                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss87 css-vubbuv"
+                                        className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss87 css-vubbuv"
                                         focusable="false"
                                         aria-hidden="true"
                                         viewBox="0 0 24 24"
@@ -491,8 +492,8 @@ export default function Information(props) {
             </div>
             <div>
               <div className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-direction-xs-column css-q5k7tr">
-                <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
-                  <h6 class="MuiTypography-root MuiTypography-subtitle2 css-c7dfze">
+                <div className="MuiGrid-root MuiGrid-item css-1wxaqej">
+                  <h6 className="MuiTypography-root MuiTypography-subtitle2 css-c7dfze">
                     Mã QR
                   </h6>
                 </div>
@@ -505,7 +506,7 @@ export default function Information(props) {
                   <div
                     data-rbd-draggable-context-id="0"
                     data-rbd-draggable-id="633d50e50c0dbe270558e4f2"
-                    tabindex="0"
+                    tabIndex="0"
                     role="button"
                     aria-describedby="rbd-hidden-text-0-hidden-text-0"
                     data-rbd-drag-handle-draggable-id="633d50e50c0dbe270558e4f2"
@@ -513,14 +514,14 @@ export default function Information(props) {
                     draggable="false"
                   >
                     <div>
-                      <div class="jss88">
-                        <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-3nargb">
-                          <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 jss87 css-o0rlmm">
-                            <div class="MuiGrid-root MuiGrid-container css-1cn3yto">
-                              <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+                      <div className="jss88">
+                        <div className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-3nargb">
+                          <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 jss87 css-o0rlmm">
+                            <div className="MuiGrid-root MuiGrid-container css-1cn3yto">
+                              <div className="MuiGrid-root MuiGrid-item css-1wxaqej">
                                 <img src={QR} alt="Mã QR" className="edit_qr" />
                                 {/* <svg
-                                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                  className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
                                   focusable="false"
                                   aria-hidden="true"
                                   viewBox="0 0 24 24"
@@ -531,22 +532,22 @@ export default function Information(props) {
                               </div>
                             </div>
                           </div>
-                          <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 css-1v3pb4k">
-                            <div class="MuiGrid-root MuiGrid-container css-v3z1wi">
-                              <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-11 css-9yaf8t">
-                                <p class="MuiTypography-root MuiTypography-body2 jss89 css-68o8xu">
+                          <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 css-1v3pb4k">
+                            <div className="MuiGrid-root MuiGrid-container css-v3z1wi">
+                              <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-11 css-9yaf8t">
+                                <p className="MuiTypography-root MuiTypography-body2 jss89 css-68o8xu">
                                   Mã QR
                                 </p>
                                 <div>
-                                  <h6 class="MuiTypography-root MuiTypography-subtitle1 jss91 css-16rlg6l"></h6>
+                                  <h6 className="MuiTypography-root MuiTypography-subtitle1 jss91 css-16rlg6l"></h6>
                                 </div>
                               </div>
-                              <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
-                                <div class="MuiGrid-root MuiGrid-container css-1c87emg">
+                              <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
+                                <div className="MuiGrid-root MuiGrid-container css-1c87emg">
                                   <Link to="/qr_code">
-                                    <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
+                                    <div className="MuiGrid-root MuiGrid-item css-1wxaqej">
                                       <svg
-                                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss87 css-vubbuv"
+                                        className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium jss87 css-vubbuv"
                                         focusable="false"
                                         aria-hidden="true"
                                         viewBox="0 0 24 24"
@@ -571,18 +572,18 @@ export default function Information(props) {
               <hr className="MuiDivider-root MuiDivider-fullWidth css-39bbo6" />
               <div className="MuiGrid-root MuiGrid-container css-1c87emg">
                 <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-md-12 css-we0np1">
-                  <p class="MuiTypography-root MuiTypography-body2 css-68o8xu">
+                  <p className="MuiTypography-root MuiTypography-body2 css-68o8xu">
                     Đóng góp quý báu của bạn sẽ giúp VIPID hoàn thiện hơn trong
                     tương lai.
                   </p>
                 </div>
                 <div className="MuiGrid-root css-rfnosa">
                   <button
-                    class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButtonBase-root  css-110xwq5"
-                    tabindex="0"
+                    className="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButtonBase-root  css-110xwq5"
+                    tabIndex="0"
                     type="button"
                   >
-                    Góp ý<span class="MuiTouchRipple-root css-w0pj6f"></span>
+                    Góp ý<span className="MuiTouchRipple-root css-w0pj6f"></span>
                   </button>
                 </div>
               </div>

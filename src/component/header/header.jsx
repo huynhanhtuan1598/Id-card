@@ -22,7 +22,7 @@ export default function header() {
             <span className="jss909">
                 En
             </span>
-            <div class="jss908"></div>
+            <div className="jss908"></div>
           </div>
         </Container>
       </Navbar>

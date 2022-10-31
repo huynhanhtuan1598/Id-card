@@ -1,8 +1,21 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { Link, useNavigate  } from "react-router-dom";
 import './hash_url.css';
 
-export default function hash_url() {
+export default function Hash_url(props) {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const [name, setName] = useState(useSelector((state) => state.user.name));
+  const saveName = () => {
+    dispatch({
+      type: "EDIT_NAME",
+      payload: { name: name },
+    });
+    navigate('/')
+  };
+
+
   return (
     <div>
       <header class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic jss173 css-qixh7c">
@@ -60,13 +73,17 @@ export default function hash_url() {
                   <div className="css_cty">
                     <b>Tên người dùng</b>
                   </div>
-                  <input name="value" value="hantiennhat" />
+                  <input name="value" value={name}
+                  onChange={(e)=>{
+                    setName(e.target.value);
+                  }} />
                 </div>
               </div>
               <button
                 class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth MuiButtonBase-root jss175 css-1qelgoy"
                 tabindex="0"
                 type="submit"
+                onClick={saveName}
               >
                 {" "}
                 Lưu thông tin
