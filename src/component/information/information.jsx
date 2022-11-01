@@ -7,6 +7,7 @@ import {useSelector, useDispatch } from "react-redux";
 
 export default function Information(props) {
   const name = useSelector(state => state.user.name)
+  const phone = useSelector(state => state.user.phone)
   const birthday = useSelector(state => state.user.birthday)
   const company = useSelector(state => state.user.company)
   const position = useSelector(state => state.user.position)
@@ -460,7 +461,7 @@ export default function Information(props) {
                                 </p>
                                 <div>
                                   <h6 className="MuiTypography-root MuiTypography-subtitle1 jss91 css-16rlg6l">
-                                    0966625553
+                                    {phone}
                                   </h6>
                                 </div>
                               </div>

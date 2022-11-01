@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import "./style.css";
+import axios from 'axios';
 
 export default function Edit_profile() {
   const dispatch = useDispatch();
@@ -15,6 +16,25 @@ export default function Edit_profile() {
     });
     navigate('/')
   };
+
+
+  useEffect(() => {
+    // const response = axiosClient.get(`/auth/get_tokens?username=ninh&password=123@Enmasys`)
+    const fetchUserlist = async () => {
+      await axios({
+        method: 'get',
+        url: `https://ecom.bnidx.net/api/auth/get_tokens?username=ninh&password=123@Enmasys`,
+      }).then((data) => {
+        console.log(data)
+      }).catch((err) => {
+        console.log(err);
+      })
+    }
+    fetchUserlist();
+  })
+
+
+
   return (
     <div>
       <header className="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic jss135 css-qixh7c">

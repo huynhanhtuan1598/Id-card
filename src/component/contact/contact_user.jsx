@@ -1,8 +1,21 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
 import "./style_contact.css";
 
-export default function contact_user() {
+export default function Contact_user() {
+
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const [phone, setPhone] = useState(useSelector((state)=> state.user.phone));
+  const savePhone = () => {
+    dispatch({
+      type: "EDIT_PHONE",
+      payload: { phone: phone },
+    });
+    navigate('/')
+  };
+
   return (
     <div>
       <header class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic jss135 css-qixh7c">
@@ -34,15 +47,22 @@ export default function contact_user() {
               <div className="MuiFormControl-root MuiFormControl-fullWidth css-tzsjye">
                 <div className="input_name">
                   <div className="name_input">Số cá nhân</div>
-                  <input name="value" value="0966625553"></input>
+                  <input
+                    id="value_phone"
+                    name="value"
+                    value={phone}
+                    onChange={(e) => {
+                      setPhone(e.target.value);
+                    }}
+                  />
                 </div>
               </div>
               <button
                 class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth MuiButtonBase-root jss36 css-1qelgoy"
                 tabindex="0"
                 type="submit"
+                onClick={savePhone}
               >
-                {" "}
                 Lưu thay đổi
                 <span class="MuiTouchRipple-root css-w0pj6f"></span>
               </button>

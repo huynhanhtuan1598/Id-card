@@ -10,27 +10,29 @@ import { publicRoutes } from './router/index';
 import Profile from './page/home/profile/profile';
 import userApi from './api/userApi';
 import axios from 'axios';
+import axiosClient from './api/axiosClient';
 
 
 function App() {
 
 
-  useEffect(() => {
-    const fetchUserlist = async () => {
-      await axios({
-        method: 'get',
-        url: `https://ecom.bnidx.net/api/auth/get_tokens?username=ninh&password=123@Enmasys`,
-      }).then((data) => {
-        console.log(data.access_token)
-      }).catch((err) => {
-        console.log("err")
-      })
-    }
-    fetchUserlist();
-  })
-
-
-
+  // fetch('https://fakestoreapi.com/products/1')
+  //           .then(res=>res.json())
+  // //           .then(json=>console.log(json))
+  // useEffect(() => {
+  //   // const response = axiosClient.get(`/auth/get_tokens?username=ninh&password=123@Enmasys`)
+  //   const fetchUserlist = async () => {
+  //     await axios({
+  //       method: 'get',
+  //       url: `/auth/get_tokens?username=ninh&password=123@Enmasys`,
+  //     }).then((data) => {
+  //       console.log(data)
+  //     }).catch((err) => {
+  //       console.log(err);
+  //     })
+  //   }
+  //   fetchUserlist();
+  // })
 
   return (
     <div className="App">
