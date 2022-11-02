@@ -14,7 +14,7 @@ export default function header() {
           <Link to="/home">
             <img src={logo} alt="Logo" />
           </Link>
-            <Link  to ='/login' className="jss999"><b>Đăng ký &nbsp;</b></Link>
+            <Link  to ='/user_link' className="jss999"><b>Đăng ký &nbsp;</b></Link>
           <div className="jss907">
             <span className="jss909">
                 Vi

@@ -22,6 +22,8 @@ import Qr_code from '../component/QR_code/qr_code';
 import login from '../page/login/login';
 import Calendar1 from '../component/calendar/calendar';
 
+import user_link from '../page/user_link/user_link';
+
 
 
 const publicRoutes = [
@@ -50,12 +52,21 @@ const publicRoutes = [
     {path: '/Address', component: Address}, //trang địa chỉt
     {path: '/Website', component: Website}, //trang web
     {path: '/qr_code', component: Qr_code}, //Mã QR\
-    {path: '/Calendar1', component: Calendar1}, //Mã QR\
+    {path: '/Calendar1', component: Calendar1}, //Lịch
 
 
 
     // login
-    {path: '/login', component: login}, //Mã QR\
+    {path: '/login', component: login}, //Đăng nhập
+    
+
+
+    {path: '/user_link', component: user_link}, //Đăng nhập
+
+
+    
+
+
 
 
 

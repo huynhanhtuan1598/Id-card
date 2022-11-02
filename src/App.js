@@ -16,23 +16,6 @@ import axiosClient from './api/axiosClient';
 function App() {
 
 
-  // fetch('https://fakestoreapi.com/products/1')
-  //           .then(res=>res.json())
-  // //           .then(json=>console.log(json))
-  // useEffect(() => {
-  //   // const response = axiosClient.get(`/auth/get_tokens?username=ninh&password=123@Enmasys`)
-  //   const fetchUserlist = async () => {
-  //     await axios({
-  //       method: 'get',
-  //       url: `/auth/get_tokens?username=ninh&password=123@Enmasys`,
-  //     }).then((data) => {
-  //       console.log(data)
-  //     }).catch((err) => {
-  //       console.log(err);
-  //     })
-  //   }
-  //   fetchUserlist();
-  // })
 
   return (
     <div className="App">
