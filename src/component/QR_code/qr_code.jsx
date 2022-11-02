@@ -35,7 +35,7 @@ export default function Qr_code() {
         <div class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-191lty2">
           <Link to="/"
             class="MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeStart MuiIconButton-sizeMedium css-7vbamj"
-            tabindex="0"
+            tabIndex="0"
           >
             <svg
               class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"

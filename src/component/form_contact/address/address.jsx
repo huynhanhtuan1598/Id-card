@@ -8,7 +8,7 @@ export default function address() {
         <div class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-191lty2">
           <Link to="/add_contact"
             class="MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeStart MuiIconButton-sizeMedium css-7vbamj"
-            tabindex="0"
+            tabIndex="0"
           >
             <svg
               class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
@@ -78,7 +78,7 @@ export default function address() {
               <div class="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth css-ibaxil">
                 <button
                   class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth MuiButtonBase-root jss195 css-1qelgoy"
-                  tabindex="0"
+                  tabIndex="0"
                   type="submit"
                 >
                   Lưu<span class="MuiTouchRipple-root css-w0pj6f"></span>

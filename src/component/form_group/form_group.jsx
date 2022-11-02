@@ -9,7 +9,7 @@ export default function form_group() {
         <div class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-191lty2">
           <Link to="/"
             class="MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeStart MuiIconButton-sizeMedium css-7vbamj"
-            tabindex="0"
+            tabIndex="0"
           >
             <svg
               class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
@@ -28,7 +28,7 @@ export default function form_group() {
           <span class="MuiBadge-root css-1rzb3uu">
             <button
               class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButtonBase-root jss218 css-1rtnrqa"
-              tabindex="0"
+              tabIndex="0"
               type="button"
             >
               <svg
@@ -46,7 +46,7 @@ export default function form_group() {
           </span>
           <button
             class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root jss215 css-1ujsas3"
-            tabindex="0"
+            tabIndex="0"
             type="button"
             aria-controls="simple-menu"
             aria-haspopup="true"
@@ -77,7 +77,7 @@ export default function form_group() {
           <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
             <div
               class="MuiButtonBase-root MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorPrimary MuiChip-clickable MuiChip-clickableColorPrimary MuiChip-filledPrimary css-1dhljxg"
-              tabindex="0"
+              tabIndex="0"
               role="button"
             >
               <span class="MuiChip-label MuiChip-labelMedium css-9iedg7">
@@ -89,7 +89,7 @@ export default function form_group() {
           <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
             <div
               class="MuiButtonBase-root MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-clickable MuiChip-clickableColorDefault MuiChip-filledDefault css-genwvd"
-              tabindex="0"
+              tabIndex="0"
               role="button"
             >
               <span class="MuiChip-label MuiChip-labelMedium css-9iedg7">

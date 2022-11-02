@@ -22,7 +22,7 @@ export default function Hash_url(props) {
         <div class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-191lty2">
           <Link to="/"
             class="MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeStart MuiIconButton-sizeMedium css-7vbamj"
-            tabindex="0"
+            tabIndex="0"
           >
             <svg
               class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
@@ -81,7 +81,7 @@ export default function Hash_url(props) {
               </div>
               <button
                 class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth MuiButtonBase-root jss175 css-1qelgoy"
-                tabindex="0"
+                tabIndex="0"
                 type="submit"
                 onClick={saveName}
               >

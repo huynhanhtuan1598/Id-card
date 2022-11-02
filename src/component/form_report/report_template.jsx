@@ -10,7 +10,7 @@ export default function report_template() {
         <div class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-191lty2">
           <Link to="/"
             class="MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeStart MuiIconButton-sizeMedium css-7vbamj"
-            tabindex="0"
+            tabIndex="0"
           >
             <svg
               class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
@@ -29,7 +29,7 @@ export default function report_template() {
           <span class="MuiBadge-root css-1rzb3uu">
             <button
               class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButtonBase-root jss218 css-1rtnrqa"
-              tabindex="0"
+              tabIndex="0"
               type="button"
             >
               <svg
@@ -47,7 +47,7 @@ export default function report_template() {
           </span>
           <button
             class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root jss215 css-1ujsas3"
-            tabindex="0"
+            tabIndex="0"
             type="button"
             aria-controls="simple-menu"
             aria-haspopup="true"
@@ -85,7 +85,7 @@ export default function report_template() {
                 <div>
                   <button
                     class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root jss235 css-1ujsas3"
-                    tabindex="0"
+                    tabIndex="0"
                     type="button"
                     aria-controls="simple-menu"
                     aria-haspopup="true"
@@ -166,7 +166,7 @@ export default function report_template() {
                 <div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiAccordion-root MuiAccordion-rounded MuiAccordion-gutters css-67l5gl">
                   <div
                     class="MuiButtonBase-root MuiAccordionSummary-root MuiAccordionSummary-gutters css-1iji0d4"
-                    tabindex="0"
+                    tabIndex="0"
                     role="button"
                     aria-expanded="false"
                     aria-controls="panel1a-content"

@@ -10,7 +10,7 @@ export default function add_contact() {
           <Link
             to="/"
             class="MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeStart MuiIconButton-sizeMedium css-7vbamj"
-            tabindex="0"
+            tabIndex="0"
           >
             <svg
               class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
@@ -29,7 +29,7 @@ export default function add_contact() {
           <span class="MuiBadge-root css-1rzb3uu">
             <button
               class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButtonBase-root jss250 css-1rtnrqa"
-              tabindex="0"
+              tabIndex="0"
               type="button"
             >
               <svg
@@ -47,7 +47,7 @@ export default function add_contact() {
           </span>
           <button
             class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root jss247 css-1ujsas3"
-            tabindex="0"
+            tabIndex="0"
             type="button"
             aria-controls="simple-menu"
             aria-haspopup="true"

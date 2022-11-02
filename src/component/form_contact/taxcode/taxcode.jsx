@@ -9,7 +9,7 @@ export default function taxcode() {
           <Link
             to="/add_contact"
             class="MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeStart MuiIconButton-sizeMedium css-7vbamj"
-            tabindex="0"
+            tabIndex="0"
           >
             <svg
               class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
@@ -74,7 +74,7 @@ export default function taxcode() {
               </div>
               <button
                 class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth MuiButtonBase-root jss11 css-1qelgoy"
-                tabindex="0"
+                tabIndex="0"
                 type="submit"
               >
                 Lưu<span class="MuiTouchRipple-root css-w0pj6f"></span>

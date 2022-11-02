@@ -9,7 +9,7 @@ export default function appearance() {
         <div class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-191lty2">
           <Link to='/'
             class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeStart MuiIconButton-sizeLarge css-1x52uzk"
-            tabindex="0"
+            tabIndex="0"
             aria-label="back"
           >
             <svg
@@ -41,7 +41,7 @@ export default function appearance() {
           <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-6 css-1s50f5r">
             <button
               class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-fullWidth MuiButtonBase-root MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-7z3f7e"
-              tabindex="0"
+              tabIndex="0"
               type="button"
             >
               <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-1spp1h3">
@@ -64,7 +64,7 @@ export default function appearance() {
           <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-6 css-1s50f5r">
             <button
               class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-fullWidth MuiButtonBase-root MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-7z3f7e"
-              tabindex="0"
+              tabIndex="0"
               type="button"
             >
               <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-2zz4tu">
@@ -87,7 +87,7 @@ export default function appearance() {
           <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-6 css-1s50f5r">
             <button
               class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-fullWidth MuiButtonBase-root MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-7z3f7e"
-              tabindex="0"
+              tabIndex="0"
               type="button"
             >
               <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-1uyy6xh">
@@ -110,7 +110,7 @@ export default function appearance() {
           <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-6 css-1s50f5r">
             <button
               class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-fullWidth MuiButtonBase-root MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-7z3f7e"
-              tabindex="0"
+              tabIndex="0"
               type="button"
             >
               <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-19rggn4">

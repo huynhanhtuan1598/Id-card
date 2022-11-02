@@ -1,4 +1,5 @@
 const initialState = {
+    id: 0,
     name: "Nguyễn Văn A",
     birthday: "2000-01-01",
     company: "Enmasys",
@@ -7,6 +8,12 @@ const initialState = {
 
 export const userReducer = (state = initialState, action) => {
     switch (action.type) {
+        case 'EDIT_ID':{
+            return {
+                ...state,
+                id: action.payload.id
+            }
+        }
         case 'EDIT_NAME': {
             return {
                 ...state,
@@ -14,7 +21,6 @@ export const userReducer = (state = initialState, action) => {
             }
         }
         case 'EDIT_BIRTHDAY': {
-            console.log(action.payload.birthday)
             return {
                 ...state,
                 birthday: action.payload.birthday,
