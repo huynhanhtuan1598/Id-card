@@ -17,7 +17,7 @@ export default function Form_login() {
       const params = {
         jsonrpc: "2.0",
         params: {
-          db: "VTA_19_10",
+          db: "Odoo14_Ecom_Com_DB2",
           login: username,
           password: password,
         },
