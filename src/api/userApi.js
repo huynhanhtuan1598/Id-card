@@ -4,7 +4,7 @@ import axiosClient from "./axiosClient";
 const userApi = {
     login: (params) => {
         const url = `/web/session/authenticate`;
-        return axiosClient.post(url, params);
+        return axiosClient.post(url, params,{ withCredentials: false });
     },
     get: (id) => {
         const url = `/res.partner/${id}`;

@@ -1,0 +1,26 @@
+[
+    {
+      "firstName": "John",
+      "lastName": "Smith",
+      "title": "CEO",
+      "gender": "male",
+      "email": "jsmith@myworkplace.com",
+      "work": "(555) 555-5555",
+      "mobile": "(555) 555-5555",
+      "location": "Washington, D.C.",
+      "employeeID": "1"
+    },
+    {
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "title": "CFO",
+      "gender": "female",
+      "email": "jdoe@myworkplace.com",
+      "work": "(555) 555-5555",
+      "mobile": "(555) 555-5555",
+      "location": "Washington, D.C.",
+      "image": "https://kenh14cdn.com/thumb_w/620/2018/4/4/102012chuchonoitiengvoimiengcuoituoinhatthegioi1-15228328893861282780824.jpg" ,
+      "employeeID": "2"
+    }
+  ]
+  

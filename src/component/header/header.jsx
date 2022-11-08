@@ -11,10 +11,10 @@ export default function header() {
    <>
       <Navbar bg="white" variant="light">
         <Container>
-          <Link to="/home">
+          <Link to="/">
             <img src={logo} alt="Logo" />
           </Link>
-            <Link  to ='/user_link' className="jss999"><b>Đăng ký &nbsp;</b></Link>
+            <Link  to ='/login' className="jss999"><b>Đăng ký &nbsp;</b></Link>
           <div className="jss907">
             <span className="jss909">
                 Vi
