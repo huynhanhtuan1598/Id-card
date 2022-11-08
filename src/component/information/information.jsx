@@ -3,14 +3,15 @@ import "./infor.css";
 // import user from "../../asset/img/user.jfif";
 import { NavLink, Link } from "react-router-dom";
 import QR from "../../asset/img/qr.png";
-import {useSelector, useDispatch } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import Bookflip from "../flipbook2/bookflip";
 
 export default function Information(props) {
-  const name = useSelector(state => state.user.name)
-  const phone = useSelector(state => state.user.phone)
-  const birthday = useSelector(state => state.user.birthday)
-  const company = useSelector(state => state.user.company)
-  const position = useSelector(state => state.user.position)
+  const name = useSelector((state) => state.user.name);
+  const phone = useSelector((state) => state.user.phone);
+  const birthday = useSelector((state) => state.user.birthday);
+  const company = useSelector((state) => state.user.company);
+  const position = useSelector((state) => state.user.position);
 
   const [avatar, setAvatar] = useState();
   useEffect(() => {
@@ -29,27 +30,27 @@ export default function Information(props) {
     var fileIn = e.target;
     var file = fileIn.files[0];
     if (file && file.size < 5e6) {
-        const formData = new FormData();
-        formData.append("file", file);
-        formData.append("upload_preset", "nghiephh")
-        formData.append("mode", 'no-cors')
-        try {
-                await fetch('https://api.cloudinary.com/v1_1/nghiephh/image/upload', {
-                    method: 'POST',
-                    body: formData,
-                })
-                    .then((response) => response.json())
-                    .then((response) => {
-                        e.preventDefault();
-                        console.log(response.secure_url)
-                    });
-        } catch (error) {
-            console.log(error);
-        }
+      const formData = new FormData();
+      formData.append("file", file);
+      formData.append("upload_preset", "nghiephh");
+      formData.append("mode", "no-cors");
+      try {
+        await fetch("https://api.cloudinary.com/v1_1/nghiephh/image/upload", {
+          method: "POST",
+          body: formData,
+        })
+          .then((response) => response.json())
+          .then((response) => {
+            e.preventDefault();
+            console.log(response.secure_url);
+          });
+      } catch (error) {
+        console.log(error);
+      }
     } else {
-        alert("file Quá Lớn");
+      alert("file Quá Lớn");
     }
-}
+  };
 
   return (
     <div className="jss74">
@@ -58,7 +59,7 @@ export default function Information(props) {
           <div className="MuiGrid-root MuiGrid-item css-1wxaqej">
             <div className="MuiBox-root css-dfpqc0">
               <div className="MuiAvatar-root MuiAvatar-circular jss85 css-3i9vrz">
-                <img src='' className="MuiAvatar-img css-1hy9t21" />
+                <img src="" className="MuiAvatar-img css-1hy9t21" />
                 {/* {avatar && <img src={avatar.preview} alt="" width="100%"  className="MuiAvatar-img css-1hy9t21"/>} */}
               </div>
 
@@ -127,7 +128,6 @@ export default function Information(props) {
                           <h6 className="MuiTypography-root MuiTypography-subtitle1 jss91 css-16rlg6l">
                             {/* {user} */}
                             {name}
-
                           </h6>
                         </div>
                       </div>
@@ -176,9 +176,7 @@ export default function Information(props) {
                           <p className="MuiTypography-root MuiTypography-body2 jss89 css-68o8xu">
                             Ngày sinh
                           </p>
-                          <div>
-                            {birthday}
-                          </div>
+                          <div>{birthday}</div>
                         </div>
                         <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-1doag2i">
                           <div className="MuiGrid-root MuiGrid-container css-1c87emg">
@@ -569,6 +567,9 @@ export default function Information(props) {
                 </div>
               </div>
             </div>
+            {/* <div className="book">
+              <Bookflip />
+            </div> */}
             <div className="jss79">
               <hr className="MuiDivider-root MuiDivider-fullWidth css-39bbo6" />
               <div className="MuiGrid-root MuiGrid-container css-1c87emg">
@@ -584,7 +585,8 @@ export default function Information(props) {
                     tabIndex="0"
                     type="button"
                   >
-                    Góp ý<span className="MuiTouchRipple-root css-w0pj6f"></span>
+                    Góp ý
+                    <span className="MuiTouchRipple-root css-w0pj6f"></span>
                   </button>
                 </div>
               </div>
