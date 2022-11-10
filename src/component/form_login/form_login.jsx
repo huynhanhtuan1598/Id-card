@@ -19,11 +19,11 @@ export default function Form_login() {
         params: {
           db: "Odoo14_Ecom_Com_DB2",
           login: username,
-          password: password,
-        },
+          password: password
+        }
       };
       const response = await userApi.login(params);
-      console.log(response);
+      console.log(response)
     } catch (error) {
       console.log(error);
     }

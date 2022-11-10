@@ -1,8 +1,7 @@
 import React from "react";
-import VCardFileCreator from '../VCradFileCreator/index';
+import VCardFileCreator from '../vcradcreator/index';
 import employees from "./employees.json";
-import Logo from "../Logo";
-import { StyledContainer, StyledVCardFront, StyledVCardBack } from './styles';
+// import { StyledContainer, StyledVCardFront, StyledVCardBack } from './styles';
 
 class VCard extends React.Component {
   constructor(props) {
@@ -35,30 +34,8 @@ class VCard extends React.Component {
   render() {
     return (
       <div className="left-half">
-            <VCardFileCreator employee={this.state.employee} className='name'/>
-          </div>
-      // <StyledContainer>
-      //   <StyledVCardFront
-      //     className={[
-      //       "front",
-      //       this.state.isFrontSide ? "" : "rotate-front"
-      //     ].join(" ")}
-      //   >
-      //     <div className="left-half">
-      //       <VCardFileCreator employee={this.state.employee} className='name'/>
-           
-      //     </div>
-         
-      //   </StyledVCardFront>
-      //   <StyledVCardBack
-      //     onClick={this.handleClick}
-      //     className={["back", this.state.isFrontSide ? "" : "rotate-back"].join(
-      //       " "
-      //     )}
-      //   >
-      //     <Logo width={"80%"} fill={"#EEE"} />
-      //   </StyledVCardBack>
-      // </StyledContainer>
+        <VCardFileCreator employee={this.state.employee} className='name' />
+      </div>
     );
   }
 }

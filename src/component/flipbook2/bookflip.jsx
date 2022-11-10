@@ -33,7 +33,7 @@ export default function Bookflip() {
     const updatePage = ({ data }) => setPage(data + 2);
   
     return (
-      <div className="flex" style={{ padding: "50px 0" }}>
+      <div className="flex" style={{ padding: "50px 10px" }}>
         <span
           onClick={() => book.current.pageFlip().flipNext()}
           className={"next button"}
@@ -113,9 +113,9 @@ export default function Bookflip() {
         >
           <i className="fas fa-chevron-left"></i>
         </span>
-        <span className="info-page">
+        {/* <span className="info-page">
           {page} - {total}
-        </span>
+        </span> */}
       </div>
     );
   }
