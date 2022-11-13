@@ -8,9 +8,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './page/login/login';
 import { publicRoutes } from './router/index';
 import Profile from './page/home/profile/profile';
-import userApi from './api/userApi';
-import axios from 'axios';
-import axiosClient from './api/axiosClient';
 
 
 function App() {

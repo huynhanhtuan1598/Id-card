@@ -1,7 +1,7 @@
 import React from "react";
 import "./style_user.css";
-import VCard from "../../component/vcardvist/vcard";
-import VCardFileCreator from '../../component/vcardvist/vcradcreator/index';
+// import VCard from "../../component/vcardvist/vcard";
+// import VCardFileCreator from '../../component/vcardvist/vcradcreator/index';
 
 export default function user_link() {
   return (
@@ -209,7 +209,7 @@ export default function user_link() {
               </svg>
               <span class="MuiTouchRipple-root css-w0pj6f"></span>
             </button> */}
-            <VCard employee="3"  />
+            {/* <VCard employee="3"  /> */}
           </div>
         </div>
       </div>

@@ -1,16 +1,48 @@
 import React, { useState } from "react";
 import "./style-login.css";
 import { Formik } from "formik";
-import * as yup from "yup";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Toast from "react-bootstrap/Toast";
 import ToastContainer from "react-bootstrap/ToastContainer";
 import userApi from "../../api/userApi";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 export default function Form_login() {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
   const [show, setShow] = useState(false);
   const [title, setTitle] = useState("");
+
+  const Get_token = async (user_name, password) => {
+    try {
+      const response = await userApi.get_token(user_name, password);
+      return response.data.access_token;
+    } catch (error) {}
+  };
+
+  const get_info_user = async (id_user, username, password) => {
+    try {
+      const token = await Get_token(username, password);
+      const response = await userApi.get_info_user_by_id(id_user, token);
+      if (response.status === 200) {
+        dispatch({
+          type: "SET_ACCOUNT",
+          payload: {
+            id: id_user,
+            name: response.data.name,
+            birthday: response.data.day_of_birth,
+            company: response.data.company_id.name,
+            position: response.data.position,
+          },
+        });
+        navigate("/");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   const login = async (username, password) => {
     try {
@@ -19,15 +51,18 @@ export default function Form_login() {
         params: {
           db: "Odoo14_Ecom_Com_DB2",
           login: username,
-          password: password
-        }
+          password: password,
+        },
       };
       const response = await userApi.login(params);
-      console.log(response)
+      if (response.status === 200) {
+        get_info_user(response.data.result.uid, username, password);
+      }
     } catch (error) {
       console.log(error);
     }
   };
+  
   return (
     <div className="MuiContainer-root MuiContainer-maxWidthSm css-1m6pqln">
       <ToastContainer position="top-end" className="p-3">
