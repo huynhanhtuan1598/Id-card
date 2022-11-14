@@ -3,7 +3,7 @@ import { userReducer } from './reducers/user';
 import { hobbyReducer } from './reducers/hobby';
 
 
-const store = configureStore({
+const {store} = configureStore({
     reducer: {
         hobby: hobbyReducer,
         user: userReducer,
