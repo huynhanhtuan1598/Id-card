@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit'
-import { userReducer } from './reducers/user';
-import { hobbyReducer } from './reducers/hobby';
+import { userReducer } from './Reducers/user';
+import { hobbyReducer } from './Reducers/hobby';
 
 
 const {store} = configureStore({
