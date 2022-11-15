@@ -455,7 +455,7 @@ export default function Information(props) {
                             <div className="MuiGrid-root MuiGrid-container css-v3z1wi">
                               <div className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-11 css-9yaf8t">
                                 <p className="MuiTypography-root MuiTypography-body2 jss89 css-68o8xu">
-                                  Số cá nhân{" "}
+                                  Số cá nhân
                                 </p>
                                 <div>
                                   <h6 className="MuiTypography-root MuiTypography-subtitle1 jss91 css-16rlg6l">

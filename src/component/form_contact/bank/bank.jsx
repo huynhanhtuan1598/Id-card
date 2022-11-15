@@ -31,39 +31,81 @@ export default function bank() {
         <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 MuiGrid-direction-xs-column css-su6uu9">
           <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
             <div>
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-9l3uo3"
-              >
+              <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">
                 Địa chỉ ngân hàng của tôi là
               </p>
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-9l3uo3"
-              >
+              <p class="MuiTypography-root MuiTypography-body1 css-9l3uo3">
                 Địa chỉ ngân hàng của bạn sẽ được hiển thị trên trang cá nhân
               </p>
             </div>
           </div>
           <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
             <form autocomplete="off">
-            <div
-                class="MuiFormControl-root MuiFormControl-fullWidth css-tzsjye"
-              >
+              <div class="MuiFormControl-root MuiFormControl-fullWidth css-tzsjye">
                 <div class="jss82">
-                  <div class="jss83"> Chọn ngân hàng</div>
-                  <input name="owner" class="jss84" />
+                  {/* <div class="jss83"> Chọn ngân hàng</div> */}
+                  {/* <input name="owner" class="jss84" /> */}
+                  <div class="select">
+                    <select name="format" id="format">
+                      <option selected disabled>
+                        <p>Chọn ngân hàng</p>
+                      </option>
+                      <option value="Agribank">
+                        <p>Agribank</p>
+                      </option>
+                      <option value="Oceanbank">
+                        <p>Oceanbank</p>
+                      </option>
+                      <option value="BIDV">
+                        <p>BIDV</p>
+                      </option>
+                      <option value="VietinBank">
+                        <p>VietinBank</p>
+                      </option>
+
+                      <option value="	Vietcombank">
+                        <p>	Vietcombank</p>
+                      </option>
+                      <option value="VPBank">
+                        <p>VPBank</p>
+                      </option>
+                      <option value="MB">
+                        <p>MB</p>
+                      </option>
+                      <option value="Techcombank">
+                        <p>Techcombank</p>
+                      </option>
+
+                      <option value="ACB">
+                        <p>ACB</p>
+                      </option>
+                      <option value="Shinhanbank">
+                        <p>Shinhanbank</p>
+                      </option>
+                      <option value="TPBank">
+                        <p>TPBank</p>
+                      </option>
+                      <option value="VIB">
+                        <p>VIB</p>
+                      </option>
+                      <option value="OCB	">
+                        <p>OCB	</p>
+                      </option>
+                      <option value="	Đông Á Bank">
+                        <p>	Đông Á Bank</p>
+                      </option>
+                      
+                    </select>
+                  </div>
                 </div>
               </div>
-              <div
-                class="MuiFormControl-root MuiFormControl-fullWidth css-tzsjye"
-              >
+              <div class="MuiFormControl-root MuiFormControl-fullWidth css-tzsjye">
                 <div class="jss82">
                   <div class="jss83">Chủ tài khoản ngân hàng</div>
                   <input name="owner" class="jss84" />
                 </div>
               </div>
-              <div
-                class="MuiFormControl-root MuiFormControl-fullWidth css-tzsjye"
-              >
+              <div class="MuiFormControl-root MuiFormControl-fullWidth css-tzsjye">
                 <div class="jss82">
                   <div class="jss83">Số tài khoản ngân hàng</div>
                   <input name="content" class="jss84" />

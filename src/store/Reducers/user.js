@@ -4,6 +4,14 @@ const initialState = {
   birthday: "2000-01-01",
   company: "Enmasys",
   position: "Nhân Viên",
+  phone: "0933155412",
+  email:"",
+  address:"",
+  service:"",
+  internet:"",
+  account_number:"",
+  tax_code: "",
+  e_commerce:""
 };
 
 export const userReducer = (state = initialState, action) => {
@@ -18,6 +26,12 @@ export const userReducer = (state = initialState, action) => {
       return {
         ...state,
         name: action.payload.name,
+      };
+    }
+    case "EDIT_PHONE": {
+      return {
+        ...state,
+        phone: action.payload.phone,
       };
     }
     case "EDIT_BIRTHDAY": {

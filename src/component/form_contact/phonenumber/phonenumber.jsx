@@ -1,8 +1,22 @@
-import React from "react";
+import React,{ useEffect, useState }  from "react";
 import { Link } from "react-router-dom";
 import "../style.css";
+import { useSelector, useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
-export default function phonenumber() {
+export default function Phonenumber() {
+
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const [phone, setPhone] = useState(useSelector((state)=> state.user.phone));
+  const savePhone = () => {
+    dispatch({
+      type: "EDIT_PHONE",
+      payload: { phone: phone },
+    });
+    navigate('/')
+  };
+
   return (
     <div>
       <header class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic jss133 css-qixh7c">
@@ -76,13 +90,22 @@ export default function phonenumber() {
               >
                 <div class="jss138">
                   <div class="jss139">Số điện thoại</div>
-                  <input name="content" class="jss140" />
+                  <input
+                   class="jss140"
+                    id="value_phone"
+                    name="value"
+                    value={phone}
+                    onChange={(e) => {
+                      setPhone(e.target.value);
+                    }}
+                  />
                 </div>
               </div>
               <button
                 class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth MuiButtonBase-root jss141 css-1qelgoy"
                 tabIndex="0"
                 type="submit"
+                onClick={savePhone}
               >
                 Lưu<span class="MuiTouchRipple-root css-w0pj6f"></span>
               </button>
