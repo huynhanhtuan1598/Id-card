@@ -1,0 +1,288 @@
+/* header */
+.css-1x7skt0 {
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px, rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    position: static;
+    background-color: rgb(25, 118, 210);
+    color: rgb(255, 255, 255);
+}
+
+.css-191lty2 {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    min-height: 56px;
+}
+.css-1x52uzk {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0px 0px 0px -12px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    text-align: center;
+    flex: 0 0 auto;
+    border-radius: 50%;
+    overflow: visible;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    color: inherit;
+    padding: 12px;
+    font-size: 1.75rem;
+}
+
+.css-vubbuv {
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentcolor;
+    flex-shrink: 0;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-size: 1.5rem;
+}
+
+.css-w0pj6f {
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    z-index: 0;
+    inset: 0px;
+    border-radius: inherit;
+}
+.css-1a3lqbo {
+    margin: 0px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.css-14sonfj {
+    width: 100%;
+    margin: 16px auto;
+    box-sizing: border-box;
+    display: block;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.css-isbt42 {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: -16px;
+    width: calc(100% + 16px);
+    margin-left: -16px;
+}
+
+.css-isbt42 > .MuiGrid-item {
+    padding-left: 16px;
+    padding-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.css-18tn63a {
+    box-sizing: border-box;
+    margin: 0px;
+    flex-direction: row;
+    flex-basis: 50%;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    max-width: 50%;
+}
+.css-s18byi {
+    background-color: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0.87);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 4px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+    overflow: hidden;
+}
+.jss1411 {
+    text-decoration: none;
+}
+
+.jss140 {
+    text-align: center;
+}
+.jss1433 {
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+    padding-bottom: 120%;
+    background-size: cover;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-image: url(https://gcovipid.s3.ap-southeast-1.amazonaws.com/1641521308185-image?AWSAccessKeyId=AKIAZHG7SETL3RZHSOER&Expires=1668574514&Signature=5RpcCfA9pt87EHwO9THn6jpbF0I%3D);
+    background-color: rgb(255, 255, 255);
+}
+
+.jss1444{
+    left: 50%;
+    width: 20px;
+    bottom: 20px;
+    height: 20px;
+    display: flex;
+    position: absolute;
+    background: #fff;
+    align-items: center;
+    margin-left: -10px;
+    border-radius: 100%;
+    justify-content: center;
+}
+
+.css-1a5icme2 {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    /* position: relative; */
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0px;
+    border: 0px;
+    /* margin: 0px; */
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    padding: 9px;
+    border-radius: 50%;
+    color: rgba(0, 0, 0, 0.6);
+}
+.css-1m9pwf3 {
+    cursor: inherit;
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    z-index: 1;
+}
+.css-hyxlzm {
+    position: relative;
+    display: flex;
+}
+.css-q8lw68 {
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentcolor;
+    flex-shrink: 0;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-size: 1.5rem;
+    transform: scale(1);
+}
+.css-1c4tzn {
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentcolor;
+    flex-shrink: 0;
+    font-size: 1.5rem;
+    left: 0px;
+    position: absolute;
+    transform: scale(0);
+    transition: transform 150ms cubic-bezier(0.4, 0, 1, 1) 0ms;
+}
+.css-w0pj6f {
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    z-index: 0;
+    inset: 0px;
+    border-radius: inherit;
+}
+.jss1422 {
+    color: #313131;
+    padding: 5px;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.css-9l3uo3 {
+    margin: 0px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+}
+
+@media (min-width: 1536px){
+    .css-18tn63a {
+        flex-basis: 25%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 25%;
+    }
+}
+@media (min-width: 1200px){
+    .css-18tn63a {
+        flex-basis: 25%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 25%;
+    }
+}
+@media (min-width: 900px){
+    .css-18tn63a {
+        flex-basis: 25%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 25%;
+    }
+}
+
+
+@media (min-width: 600px){
+    .css-14sonfj {
+        max-width: 600px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .css-191lty2 {
+        min-height: 64px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+
+@media (min-width: 0px) and (orientation: landscape) {
+    .css-191lty2 {
+        min-height: 48px;
+    }
+}

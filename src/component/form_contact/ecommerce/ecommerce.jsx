@@ -45,7 +45,7 @@ export default function ecommerce() {
           </div>
           <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
             <form autocomplete="off">
-              <div
+              {/* <div
                 class="MuiFormControl-root MuiFormControl-fullWidth css-tzsjye"
               >
                 <div class="MuiGrid-root MuiGrid-container jss27 css-1b1jvye">
@@ -67,6 +67,22 @@ export default function ecommerce() {
                     </svg>
                   </div>
                 </div>
+              </div> */}
+               <div class="select">
+                <select name="format" id="format">
+                  <option selected disabled>
+                    <p>Chọn sàn thương mại điện tử</p>
+                  </option>
+                  <option value="shopee">
+                    <p>Shopee</p>
+                  </option>
+                  <option value="tiki">
+                    <p>Tiki</p>
+                  </option>
+                  <option value="lazada">
+                    <p>Lazada</p>
+                  </option>
+                </select>
               </div>
               <div
                 class="MuiFormControl-root MuiFormControl-fullWidth css-tzsjye"

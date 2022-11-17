@@ -44,29 +44,19 @@ export default function address() {
           </div>
           <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
             <form autocomplete="off">
-              <div
-                class="MuiFormControl-root MuiFormControl-fullWidth css-tzsjye"
-              >
-                <div class="MuiGrid-root MuiGrid-container jss189 css-1b1jvye">
-                  <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true css-kxu0dz">
-                    <div class="jss190">Chọn loại địa chỉ</div>
-                    <input class="jss191" name="name"  value="" />
-                  </div>
-                  {/* <div
-                    class="MuiGrid-root MuiGrid-item css-1wxaqej"
-                  >
-                    <svg
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
-                      focusable="false"
-                      aria-hidden="true"
-                      viewBox="0 0 24 24"
-                      data-testid="ChevronRightIcon"
-                    >
-                      <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
-                    </svg>
-                  </div> */}
-                </div>
-              </div>
+            <div class="select">
+                      <select name="format" id="format">
+                        <option selected disabled>
+                          <p>Chọn loại địa chỉ</p>
+                        </option>
+                        <option value="address_home">
+                          <p>Địa chỉ nhà</p>
+                        </option>
+                        <option value="address_company">
+                          <p>Địa chỉ làm việc</p>
+                        </option>
+                      </select>
+                    </div>
               <div
                 class="MuiFormControl-root MuiFormControl-fullWidth css-tzsjye"
               >

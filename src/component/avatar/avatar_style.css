@@ -1,0 +1,209 @@
+.css-5poeop {
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px, rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    position: fixed;
+    z-index: 1100;
+    top: 0px;
+    left: auto;
+    right: 0px;
+    background-color: rgb(25, 118, 210);
+    color: rgb(255, 255, 255);
+}
+
+.css-191lty2 {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    min-height: 56px;
+}
+.css-1x52uzk {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0px 0px 0px -12px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    text-align: center;
+    flex: 0 0 auto;
+    border-radius: 50%;
+    overflow: visible;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    color: inherit;
+    padding: 12px;
+    font-size: 1.75rem;
+}
+.css-vubbuv {
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentcolor;
+    flex-shrink: 0;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-size: 1.5rem;
+}
+.css-1a3lqbo {
+    margin: 0px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+}
+.css-4vau63 {
+    width: 100%;
+    margin-left: auto;
+    box-sizing: border-box;
+    margin-right: auto;
+    display: block;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 72px;
+}
+.css-xuaqpw {
+    position: fixed;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    inset: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-tap-highlight-color: transparent;
+    color: rgb(255, 255, 255);
+    z-index: 1201;
+}
+.css-4vau63 .css-xuaqpw {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.css-1cn3yto {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.css-1wxaqej {
+    box-sizing: border-box;
+    margin: 0px;
+    flex-direction: row;
+}
+.css-8yzpf7 {
+    display: inline-block;
+    animation: 1.4s linear 0s infinite normal none running animation-61bdi0;
+}
+
+.css-1wxaqej .css-8yzpf7{
+    width: 40px;
+    height: 40px;
+}
+
+.css-13o7eu2 {
+    display: block;
+}
+
+.css-14891ef {
+    stroke: currentcolor;
+    stroke-dasharray: 80px, 200px;
+    stroke-dashoffset: 0;
+    animation: 1.4s ease-in-out 0s infinite normal none running animation-1p2h4ri;
+}
+
+.jss1366 {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.jss1377 {
+    width: 100px;
+    border: 1px solid #f1f1f1;
+    cursor: pointer;
+    height: 100px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.jss1366 .jss1377{
+    width: 100%;
+    height: 100%;
+}
+
+.jss1388 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+}
+
+.jss1399 {
+    width: 100%;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 100%;
+    background-size: cover;
+}
+
+.css-6g79e0 {
+    background-image: url(https://gcovipid.s3.ap-southeast-1.amazonaws.com/1664962581167-image?AWSAccessKeyId=AKIAZHG7SETL3RZHSOER&Expires=1668573723&Signature=lK1R5qkngZXFoPqMypX29DAwqyQ%3D);
+}
+
+.css-4vau63 .css-xuaqpw{
+    opacity: 0; 
+    visibility: hidden;
+}
+.css-1wxaqej .css-8yzpf7{
+    width: 40px;
+    height: 40px;
+}
+
+
+
+@media (min-width: 600px) {
+    .css-191lty2 {
+        min-height: 64px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .css-4vau63 {
+        max-width: 600px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media (min-width: 0px) and (orientation: landscape) {
+    .css-191lty2 {
+        min-height: 48px;
+    }
+}

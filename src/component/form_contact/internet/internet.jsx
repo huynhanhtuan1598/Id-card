@@ -45,7 +45,7 @@ export default function internet() {
           </div>
           <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
             <form autocomplete="off">
-              <div
+              {/* <div
                 class="MuiFormControl-root MuiFormControl-fullWidth css-tzsjye"
               >
                 <div class="MuiGrid-root MuiGrid-container jss5 css-1b1jvye">
@@ -67,6 +67,40 @@ export default function internet() {
                     </svg>
                   </div>
                 </div>
+              </div> */}
+               <div class="select">
+                <select name="format" id="format">
+                  <option selected disabled>
+                    <p>Chọn loại mạng xã hội</p>
+                  </option>
+                  <option value="facebook">
+                    <p>facebook</p>
+                  </option>
+                  <option value="Skype">
+                    <p>Skype</p>
+                  </option>
+                  <option value="zalo">
+                    <p>Zalo</p>
+                  </option>
+                  <option value="slack">
+                    <p>Slack</p>
+                  </option>
+                  <option value="instagram">
+                    <p>Instagram</p>
+                  </option>
+                  <option value="tiktok">
+                    <p>Tiktok</p>
+                  </option>
+                  <option value="twitter">
+                    <p>Twitter</p>
+                  </option>
+                  <option value="youTube">
+                    <p>YouTube</p>
+                  </option>
+                  <option value="wechat">
+                    <p>Wechat</p>
+                  </option>
+                </select>
               </div>
               <div
                 class="MuiFormControl-root MuiFormControl-fullWidth css-tzsjye"
