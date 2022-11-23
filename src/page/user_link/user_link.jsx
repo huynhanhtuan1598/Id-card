@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import "./style_user.css";
-// import VCard from "../../component/vcardvist/vcard";
-// import VCardFileCreator from '../../component/vcardvist/vcradcreator/index';
+import VCard from "../../component/vcardvist/vcard";
+import VCardFileCreator from '../../component/vcardvist/vcradcreator/index';
 
-export default function user_link() {
+export default function User_link() {
+  const name = useSelector((state) => state.user.name);
+  const phone = useSelector((state) => state.user.phone);
+  const birthday = useSelector((state) => state.user.birthday);
+  const company = useSelector((state) => state.user.company);
+  const position = useSelector((state) => state.user.position);
+
+
+
+
+
   return (
     <div className="backgr_user">
       <div class="jss204">
@@ -24,11 +35,11 @@ export default function user_link() {
       <div class="jss_200">
         <div className="wrap-template-render">
           <div class="jss209">
-            <img
+            {/* <img
               src="https://gcovipid.s3.ap-southeast-1.amazonaws.com/1626773406385-image?AWSAccessKeyId=AKIAZHG7SETL3RZHSOER&amp;Expires=1667357465&amp;Signature=ewIlROqHTTrYlYvmM7Ka9wborV8%3D"
               alt=""
               class="jss210"
-            />
+            /> */}
           </div>
           <div class="jss206">
             <div>
@@ -45,7 +56,7 @@ export default function user_link() {
               </div>
               <div></div>
               <div>
-                <div class="name">Hàn Tiến Nhật</div>
+                <div class="name">{name }</div>
               </div>
               <div></div>
               <div>
@@ -82,7 +93,7 @@ export default function user_link() {
                             <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-11 css-9yaf8t">
                               <div className="infuser">
                                 <div class="jss2148">Số cá nhân</div>
-                                <div class="jss2168">0966625553</div>
+                                <div class="jss2168">{phone}</div>
                               </div>
                             </div>
                           </div>
@@ -179,7 +190,7 @@ export default function user_link() {
                             <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-11 css-9yaf8t">
                               <div className="infuser">
                                 <div class="jss2148">Company</div>
-                                <div class="jss2168">0966625553</div>
+                                <div class="jss2168">{company}</div>
                               </div>
                             </div>
                           </div>
@@ -191,11 +202,12 @@ export default function user_link() {
               </div>
               <div></div>
             </div>
-            {/* <button
+            <button
               class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary jss219 css-1ifjro9"
               tabindex="0"
               type="button"
               aria-label="add"
+              
             >
               <svg
                 class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
@@ -203,12 +215,13 @@ export default function user_link() {
                 aria-hidden="true"
                 viewBox="0 0 24 24"
                 data-testid="PersonAddOutlinedIcon"
-                onClick={VCardFileCreator}
+                
+                
               >
                 <path d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm0 8c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4zm-6 4c.22-.72 3.31-2 6-2 2.7 0 5.8 1.29 6 2H9zm-3-3v-3h3v-2H6V7H4v3H1v2h3v3z"></path>
               </svg>
               <span class="MuiTouchRipple-root css-w0pj6f"></span>
-            </button> */}
+            </button>
             {/* <VCard employee="3"  /> */}
           </div>
         </div>

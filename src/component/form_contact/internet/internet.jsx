@@ -1,7 +1,22 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState }  from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
 import "../style.css";
-export default function internet() {
+
+export default function Internet() {
+
+ const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const [internet, setInternet] = useState(useSelector((state) => state.user.internet ));
+  const saveInternet = () => {
+    dispatch({
+      type: "UPDATE_INTERNET",
+      payload: { internet: internet },
+    });
+    navigate('/')
+  };
+
+  
   return (
     <div>
       <header class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic jss241 css-qixh7c">
@@ -115,7 +130,7 @@ export default function internet() {
               >
                 <div class="jss11">
                   <div class="jss12">Địa chỉ mạng xã hội</div>
-                  <input name="content" class="jss13" />
+                  <input name="content" class="jss13" value={internet} onChange={(e) => {setInternet(e.target.value)}}/>
                 </div>
               </div>
               <div class="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth css-ibaxil">
@@ -123,6 +138,7 @@ export default function internet() {
                   class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth MuiButtonBase-root jss14 css-1qelgoy"
                   tabIndex="0"
                   type="submit"
+                  onClick={saveInternet}
                 >
                   Lưu<span class="MuiTouchRipple-root css-w0pj6f"></span>
                 </button>

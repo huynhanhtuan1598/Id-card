@@ -1,7 +1,25 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState }  from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
 import "../style.css";
-export default function bank() {
+
+
+
+
+export default function Bank() {
+
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const [account, setAcount] = useState(useSelector((state) => state.user.account_number ));
+  const saveBank = () => {
+    dispatch({
+      type: "UPDATE_BANK",
+      payload: { account: account },
+    });
+    navigate('/')
+  };
+
+  
   return (
     <div>
       <header class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic jss287 css-qixh7c">
@@ -42,7 +60,7 @@ export default function bank() {
           <div class="MuiGrid-root MuiGrid-item css-1wxaqej">
             <form autocomplete="off">
               <div class="MuiFormControl-root MuiFormControl-fullWidth css-tzsjye">
-                <div class="jss82">
+                {/* <div class="jss82"> */}
                   {/* <div class="jss83"> Chọn ngân hàng</div> */}
                   {/* <input name="owner" class="jss84" /> */}
                   <div class="select">
@@ -98,7 +116,7 @@ export default function bank() {
                     </select>
                   </div>
                   
-                </div>
+                {/* </div> */}
                 
               </div>
               <div class="MuiFormControl-root MuiFormControl-fullWidth css-tzsjye">
@@ -110,7 +128,7 @@ export default function bank() {
               <div class="MuiFormControl-root MuiFormControl-fullWidth css-tzsjye">
                 <div class="jss82">
                   <div class="jss83">Số tài khoản ngân hàng</div>
-                  <input name="content" class="jss84" />
+                  <input name="content" class="jss84" value={account} onChange={(e) => {setAcount(e.target.value)}} />
                 </div>
               </div>
               <div class="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth css-ibaxil">
@@ -118,6 +136,7 @@ export default function bank() {
                   class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth MuiButtonBase-root jss158 css-1qelgoy"
                   tabIndex="0"
                   type="submit"
+                  onClick={saveBank}
                 >
                   Lưu<span class="MuiTouchRipple-root css-w0pj6f"></span>
                 </button>

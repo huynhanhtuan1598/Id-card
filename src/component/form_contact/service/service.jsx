@@ -1,7 +1,22 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState }  from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
 import "../style.css";
-export default function service() {
+
+export default function Service() {
+
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const [service, setService] = useState(useSelector((state) => state.user.service ));
+  const saveService = () => {
+    dispatch({
+      type: "UPDATE_SERVICE",
+      payload: { service: service },
+    });
+    navigate('/')
+  };
+
+
   return (
     <div>
       <header class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic jss224 css-qixh7c">
@@ -49,7 +64,7 @@ export default function service() {
               >
                 <div class="jss226" >
                   <div class="jss227">Dịch vụ</div>
-                  <textarea name="content" class="jss228"></textarea>
+                  <textarea name="content" class="jss228"  value={service} onChange={(e) => {setService(e.target.value)}}></textarea>
                 </div>
               </div>
               <div class="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth css-ibaxil">
@@ -57,6 +72,7 @@ export default function service() {
                   class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth MuiButtonBase-root jss229 css-1qelgoy"
                   tabIndex="0"
                   type="submit"
+                  onClick={saveService}
                 >
                   Lưu<span class="MuiTouchRipple-root css-w0pj6f"></span>
                 </button>

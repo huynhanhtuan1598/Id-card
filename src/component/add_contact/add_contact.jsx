@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
 import "./style.css";
 
-export default function add_contact() {
+export default function Add_contact() {
+  const name = useSelector((state) => state.user.name);
+  const phone = useSelector((state) => state.user.phone);
+  const company = useSelector((state) => state.user.company);
+  const website = useSelector((state) => state.user.website);
+  const address = useSelector((state) => state.user.website);
+  const service = useSelector((state) => state.user.website);
+  const internet = useSelector((state) => state.user.website);
+  const account_bank = useSelector((state) => state.user.website);
+  const taxcode = useSelector((state) => state.user.website);
+  const ecommerce = useSelector((state) => state.user.website);
+  
+
+
   return (
     <div>
       <header class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic jss245 css-qixh7c">

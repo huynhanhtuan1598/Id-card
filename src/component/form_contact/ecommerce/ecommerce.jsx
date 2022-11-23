@@ -1,8 +1,23 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState }  from "react";
+import { Link,  useNavigate  } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
 import "../style.css";
 
-export default function ecommerce() {
+
+export default function Ecommerce() {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const [e_commerce, setEcommerce] = useState(useSelector((state) => state.user.e_commerce ));
+  const saveE_commerce = () => {
+    dispatch({
+      type: "UPDATE_ECOMMERCE",
+      payload: { e_commerce: e_commerce},
+    });
+    navigate('/')
+  };
+
+
+
   return (
     <div>
       <header class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic jss310 css-qixh7c">
@@ -22,7 +37,7 @@ export default function ecommerce() {
             </svg>
             <span class="MuiTouchRipple-root css-w0pj6f"></span>
           </Link>
-          <h6 class="MuiTypography-root MuiTypography-h6 jss311 css-1anx036">
+          <h6 class="MuiTypographyx-root MuiTypography-h6 jss311 css-1anx036">
             Thêm cửa hàng thương mại điện tử
           </h6>
         </div>
@@ -99,7 +114,7 @@ export default function ecommerce() {
                   <div class="jss31">
                     Địa chỉ cửa hàng thương mại điện tử của tôi là
                   </div>
-                  <input name="content" class="jss32" />
+                  <input name="content" class="jss32"  value={e_commerce} onChange={(e) => {setEcommerce(e.target.value)}}/>
                 </div>
               </div>
               <div class="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth css-ibaxil">
@@ -107,6 +122,7 @@ export default function ecommerce() {
                   class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth MuiButtonBase-root jss33 css-1qelgoy"
                   tabIndex="0"
                   type="submit"
+                  onClick={saveE_commerce }
                 >
                   Lưu<span class="MuiTouchRipple-root css-w0pj6f"></span>
                 </button>

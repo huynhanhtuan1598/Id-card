@@ -1,7 +1,21 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState }  from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
 
-export default function website() {
+
+export default function Website() {
+
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const [website, setWebsite] = useState(useSelector((state) => state.user.website   ));
+  const saveWebsite = () => {
+    dispatch({
+      type: "UPDATE_BANK",
+      payload: { website: website },
+    });
+    navigate('/')
+  };
+
   return (
     <div>
       <header class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic jss170 css-qixh7c">
@@ -58,7 +72,7 @@ export default function website() {
               >
                 <div class="jss172" >
                   <div class="jss173">Website</div>
-                  <input name="content" class="jss174" />
+                  <input name="content" class="jss174" value={website} onChange={(e) => {setWebsite(e.target.value)}}/>
                 </div>
               </div>
               <p class="MuiTypography-root MuiTypography-body2 css-68o8xu">
@@ -80,6 +94,7 @@ export default function website() {
                   class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth MuiButtonBase-root jss175 css-1qelgoy"
                   tabIndex="0"
                   type="submit"
+                  onClick={saveWebsite}
                 >
                   Lưu<span class="MuiTouchRipple-root css-w0pj6f"></span>
                 </button>

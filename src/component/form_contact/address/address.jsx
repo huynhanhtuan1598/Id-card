@@ -1,7 +1,24 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState }  from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
 import "../style.css";
-export default function address() {
+
+
+
+export default function Address() {
+
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const [address, setAddress] = useState(useSelector((state) => state.user.address ));
+  const saveAddress = () => {
+    dispatch({
+      type: "UPDATE_ADDRESS",
+      payload: { address: address },
+    });
+    navigate('/')
+  };
+
+
   return (
     <div>
       <header class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic jss187 css-qixh7c">
@@ -62,7 +79,7 @@ export default function address() {
               >
                 <div class="jss192" >
                   <div class="jss193">Địa chỉ</div>
-                  <input name="content" class="jss194" />
+                  <input name="content" class="jss194" value={address} onChange={(e) => {setAddress(e.target.value)}} />
                 </div>
               </div>
               <div class="MuiFormControl-root MuiFormControl-marginNormal MuiFormControl-fullWidth css-ibaxil">
@@ -70,6 +87,7 @@ export default function address() {
                   class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth MuiButtonBase-root jss195 css-1qelgoy"
                   tabIndex="0"
                   type="submit"
+                  onClick={saveAddress}
                 >
                   Lưu<span class="MuiTouchRipple-root css-w0pj6f"></span>
                 </button>

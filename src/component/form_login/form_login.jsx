@@ -56,6 +56,7 @@ export default function Form_login() {
       };
       const response = await userApi.login(params);
       if (response.status === 200) {
+        console.log(response)
         get_info_user(response.data.result.uid, username, password);
       }
     } catch (error) {
