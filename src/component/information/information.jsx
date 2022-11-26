@@ -580,6 +580,7 @@ export default function Information(props) {
                   </p>
                 </div>
                 <div className="MuiGrid-root css-rfnosa">
+                  <Link to="/Comment">
                   <button
                     className="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButtonBase-root  css-110xwq5"
                     tabIndex="0"
@@ -588,6 +589,8 @@ export default function Information(props) {
                     Góp ý
                     <span className="MuiTouchRipple-root css-w0pj6f"></span>
                   </button>
+                  </Link>
+                 
                 </div>
               </div>
             </div>

@@ -7,7 +7,7 @@ import Toast from "react-bootstrap/Toast";
 import ToastContainer from "react-bootstrap/ToastContainer";
 import userApi from "../../api/userApi";
 import { useDispatch } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Form_login() {
   const dispatch = useDispatch();
@@ -171,6 +171,7 @@ export default function Form_login() {
                             </div>
                           </div>
                           <div className="MuiGrid-root MuiGrid-item css-1wxaqej">
+                            {/* <Link to="/"> */}
                             <Button
                               type="submit"
                               variant="primary"
@@ -182,6 +183,7 @@ export default function Form_login() {
                             >
                               Đăng Nhập
                             </Button>
+                            {/* </Link> */}
                           </div>
                         </div>
                       </form>
@@ -191,7 +193,7 @@ export default function Form_login() {
               </div>
             </div>
             <div className="MuiGrid-root MuiGrid-item css-1wxaqej">
-              <a className="jss50" href="/forgot">
+              <a className="jss50" href="https://ecom.bnidx.net/web/reset_password">
                 <b>Quên mật khẩu</b>
               </a>
             </div>

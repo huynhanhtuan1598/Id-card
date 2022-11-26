@@ -1,4 +1,7 @@
 import axios from "axios";
+import App from "../App";
+
+
 
 const base_url = "https://ecom.bnidx.net";
 

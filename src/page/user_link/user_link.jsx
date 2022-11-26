@@ -7,9 +7,9 @@ import VCardFileCreator from '../../component/vcardvist/vcradcreator/index';
 export default function User_link() {
   const name = useSelector((state) => state.user.name);
   const phone = useSelector((state) => state.user.phone);
-  const birthday = useSelector((state) => state.user.birthday);
   const company = useSelector((state) => state.user.company);
   const position = useSelector((state) => state.user.position);
+  const bank = useSelector((state) => state.user.account_number);
 
 
 
@@ -35,11 +35,7 @@ export default function User_link() {
       <div class="jss_200">
         <div className="wrap-template-render">
           <div class="jss209">
-            {/* <img
-              src="https://gcovipid.s3.ap-southeast-1.amazonaws.com/1626773406385-image?AWSAccessKeyId=AKIAZHG7SETL3RZHSOER&amp;Expires=1667357465&amp;Signature=ewIlROqHTTrYlYvmM7Ka9wborV8%3D"
-              alt=""
-              class="jss210"
-            /> */}
+            
           </div>
           <div class="jss206">
             <div>
@@ -92,7 +88,7 @@ export default function User_link() {
                             </div>
                             <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-11 css-9yaf8t">
                               <div className="infuser">
-                                <div class="jss2148">Số cá nhân</div>
+                                <div class="jss2148"><b>Số cá nhân</b></div>
                                 <div class="jss2168">{phone}</div>
                               </div>
                             </div>
@@ -125,7 +121,7 @@ export default function User_link() {
                             <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-11 css-9yaf8t">
                               <div className="infuser">
                                 <div class="jss2148">Tài khoản ngân hàng</div>
-                                <div class="jss2168">0966625553</div>
+                                <div class="jss2168">{bank}</div>
                               </div>
                             </div>
                           </div>

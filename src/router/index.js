@@ -25,6 +25,7 @@ import Calendar1 from '../component/calendar/calendar';
 import user_link from '../page/user_link/user_link';
 import Avatar_img from '../component/avatar/avatar_img';
 import theme from '../component/theme/theme';
+import Comment from '../component/comment/Comment';
 
 
 const publicRoutes = [
@@ -56,6 +57,9 @@ const publicRoutes = [
     {path: '/Calendar1', component: Calendar1}, //Lịch
     {path: '/Avatar_img', component: Avatar_img}, //hình nền
     {path: '/theme', component: theme}, //hình nền
+    {path: '/Comment', component: Comment}, //hình nền
+
+
 
 
 
