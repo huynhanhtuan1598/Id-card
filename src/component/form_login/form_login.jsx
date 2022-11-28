@@ -8,6 +8,7 @@ import ToastContainer from "react-bootstrap/ToastContainer";
 import userApi from "../../api/userApi";
 import { useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
 
 export default function Form_login() {
   const dispatch = useDispatch();
@@ -54,11 +55,17 @@ export default function Form_login() {
           password: password,
         },
       };
-      const response = await userApi.login(params);
-      if (response.status === 200) {
-        console.log(response)
-        get_info_user(response.data.result.uid, username, password);
-      }
+      // const response = await userApi.login(params);
+      // // console.log(response);
+      // if (response.status === 200) {
+      //   console.log(response)
+      //   get_info_user(response.data.result.uid, username, password);
+      // }
+      axios.post('https://ecom.bnidx.net/web/session/authenticate', {params})
+      .then(res => {
+        console.log(res);
+        console.log(res.data);
+      })
     } catch (error) {
       console.log(error);
     }

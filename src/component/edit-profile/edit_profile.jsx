@@ -55,7 +55,7 @@ export default function Edit_profile() {
             </svg>
             <span className="MuiTouchRipple-root css-w0pj6f"></span>
           </Link>
-          <h6 className="MuiTypography-root MuiTypography-h6 jss136 css-1anx036">
+          <h6 className="MuiTypography-root MuiTypography-h6 jss1366 css-1anx036">
             Họ tên
           </h6>
         </div>
