@@ -77,23 +77,23 @@ export default function Form_login() {
 
     const login = async (username, password) => {
    
-    const params = {
+    const params = JSON.stringify({
       jsonrpc: "2.0",
       params: {
         db: "Odoo14_Ecom_Com_DB2",
         login: username,
         password: password,
       },
-    };
+    });
     var data = JSON.stringify({
       "jsonrpc": "2.0",
       "params": {
         "db": "Odoo14_Ecom_Com_DB2",
         "login": "phunguyenerp@gmail.com",
         "password": "123"
-      
       }
     });
+    // let usestr = JSON.stringify(data);
     var config = {
       method: 'post',
       url: 'https://ecom.bnidx.net/web/session/authenticate',
@@ -102,15 +102,38 @@ export default function Form_login() {
       },
       data : data
     };
+
+    
     axios(config)
     .then(function (response) {
       console.log(JSON.stringify(response.data));
+      console.log(JSON.stringify(response.data.uid));
+
     })
+    
+    
     .catch(function (error) {
       console.log(error);
     }); 
-
   };
+
+//   let userObj = {
+//   name: "Sammy",
+//   email: "sammy@example.com",
+//   plan: "Pro"
+// };
+
+// function replacer(key, value) {
+//   console.log(typeof value);
+//   if (key === 'email') {
+//     return undefined;
+//   }
+//   return value;
+// }
+
+// let userStrReplacer = JSON.stringify(userObj, replacer);
+
+// console.log(userStrReplacer);
 
 
   return (

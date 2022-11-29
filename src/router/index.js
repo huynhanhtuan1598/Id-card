@@ -59,28 +59,10 @@ const publicRoutes = [
     {path: '/theme', component: theme}, //hình nền
     {path: '/Comment', component: Comment}, //hình nền
 
-
-
-
-
-
-
-
-
     // login
     {path: '/login', component: login}, //Đăng nhập
     
-
-
-    {path: '/user_link', component: user_link}, //Đăng nhập
-
-
-    
-
-
-
-
-
+    {path: '/user_link', component: user_link}, //trang thông tin
 ]
 
 const privateRoutes = []
