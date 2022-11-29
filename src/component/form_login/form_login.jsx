@@ -11,6 +11,8 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 export default function Form_login() {
+ 
+
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [show, setShow] = useState(false);
@@ -45,32 +47,72 @@ export default function Form_login() {
     }
   };
 
-  const login = async (username, password) => {
-    try {
-      const params = {
-        jsonrpc: "2.0",
-        params: {
-          db: "Odoo14_Ecom_Com_DB2",
-          login: username,
-          password: password,
-        },
-      };
-      // const response = await userApi.login(params);
-      // // console.log(response);
-      // if (response.status === 200) {
-      //   console.log(response)
-      //   get_info_user(response.data.result.uid, username, password);
-      // }
-      axios.post('https://ecom.bnidx.net/web/session/authenticate', {params})
-      .then(res => {
-        console.log(res);
-        console.log(res.data);
-      })
-    } catch (error) {
+  // const login = async (username, password) => {
+  //   try {
+  //     const params = {
+  //       jsonrpc: "2.0",
+  //       params: {
+  //         db: "Odoo14_Ecom_Com_DB2",
+  //         login: username,
+  //         password: password,
+  //       },
+  //     };
+  //     // const response = await userApi.login(params);
+  //     // // console.log(response);
+  //     // if (response.status === 200) {
+  //     //   console.log(response)
+  //     //   get_info_user(response.data.result.uid, username, password);
+  //     // }
+     
+  //     axios.post("https://ecom.bnidx.net/web/session/authenticate", { params })
+  //       .then((res) => {
+  //         console.log(res);
+  //         // console.log(res.data);
+  //         get_info_user(res.data.result.uid, username, password);
+  //       });
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
+
+    const login = async (username, password) => {
+   
+    const params = {
+      jsonrpc: "2.0",
+      params: {
+        db: "Odoo14_Ecom_Com_DB2",
+        login: username,
+        password: password,
+      },
+    };
+    var data = JSON.stringify({
+      "jsonrpc": "2.0",
+      "params": {
+        "db": "Odoo14_Ecom_Com_DB2",
+        "login": "phunguyenerp@gmail.com",
+        "password": "123"
+      
+      }
+    });
+    var config = {
+      method: 'post',
+      url: 'https://ecom.bnidx.net/web/session/authenticate',
+      headers: { 
+        'Content-Type': 'application/json'
+      },
+      data : data
+    };
+    axios(config)
+    .then(function (response) {
+      console.log(JSON.stringify(response.data));
+    })
+    .catch(function (error) {
       console.log(error);
-    }
+    }); 
+
   };
-  
+
+
   return (
     <div className="MuiContainer-root MuiContainer-maxWidthSm css-1m6pqln">
       <ToastContainer position="top-end" className="p-3">
@@ -200,7 +242,10 @@ export default function Form_login() {
               </div>
             </div>
             <div className="MuiGrid-root MuiGrid-item css-1wxaqej">
-              <a className="jss50" href="https://ecom.bnidx.net/web/reset_password">
+              <a
+                className="jss50"
+                href="https://ecom.bnidx.net/web/reset_password"
+              >
                 <b>Quên mật khẩu</b>
               </a>
             </div>

@@ -50,7 +50,6 @@ export default function Contact_user() {
                   <input
                     id="value_phone"
                     name="value"
-                    value={phone}
                     onChange={(e) => {
                       setPhone(e.target.value);
                     }}
